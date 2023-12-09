@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+a.underline-effect:after {
+    content: "";
+    position: absolute;
+    background-color: #588CFE;
+    height: 3px;
+    width: 0;
+    left: 10px;
+    bottom: 2px;
+    transition: width 0.3s;
+}
+
+a.underline-effect:hover::after {
+    width: 80%;
+}
+
+/* Floating Navbar Styles */
+.floating-navbar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link svg {
+    fill: #fff;
+    margin-right: 8px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+.floating-navbar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.floating-navbar a:hover {
+    width: calc(100% + 20px); /* Extend width on hover */
+}

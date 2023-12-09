@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <link rel="icon" href="./assets/img/">
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styling links -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
+</head>
+
+<body class="" style="background-color: #F8F9FB; font-family: 'Noto Sans', sans-serif;">
+    <!-- navbar -->
+    <nav class="py-2">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span style="font-family:'Kadwa'" class="text-gray-900 text-2xl font-bold">AHMahi<span class="text-blue-500">.</span></span>
+                </div>
+                <!-- navlink -->
+                <div class="hidden sm:block ml-auto">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="text-gray-900 px-3 py-2 text-sm font-semibold underline-effect">Home</a>
+                        <a href="#" class="text-gray-900 px-3 py-2 text-sm font-semibold underline-effect">Contact</a>
+                        <a href="#" class="text-gray-900 px-3 py-2 text-sm font-semibold underline-effect">Projects</a>
+                        <a href="#" class="text-gray-900 border border-blue-500 px-4 rounded-sm py-[10px] text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-primary hover:text-white">Resume</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-900 hover:to-blue-500 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>                    
+                </div>                               
+            </div>
+            <div id="mobile-menu" class="hidden sm:hidden">
+                <div class="px-2 pt-2 space-y-5">
+                    <a href="#" class="text-gray-900 block px-3 py-2 font-semibold underline-effect">Home</a>
+                    <a href="#" class="text-gray-900 block px-3 py-2 font-semibold underline-effect">Contact</a>
+                    <a href="#" class="text-gray-900 block px-3 py-2 font-semibold underline-effect">Projects</a>
+                    <a href="#" class="text-gray-900 block px-3 py-2 font-semibold underline-effect">Resume</a>
+                    <!-- <div class="px-2">
+                        <a href="#" class="text-gray-900 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero text-gray-900 py-28">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 style="font-family:'Rasa'" class="text-4xl font-bold text-blue-500 lg:leading-[94px] lg:text-[38px]">Hello, I'm Abdul Hamid Mahi</h1>
+                <h1 style="font-family:'Kadwa'" class="text-6xl mt-2 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed"></span></h1>
+                <p class="mt-4 text-gray w-full lg:w-4/6 mt-12 font-medium text-md">
+                    "Hello! I'm Abdul Hamid Mahi, a UI/UX designer & Front-End Development. My journey has covered a spectrum of IT domains from Mobile app development to Desktop, IoT, Game, Web, Testing and Cloud Computing. 
+                    Eager to contribute my diverse skills and creative problem-solving to the dynamic IT landscape, I want to explore impactful possibilities!"
+                </p>
+            <div class="mt-10">
+                <div style="font-family:'Rasa'" class="mt-6 flex items-center gap-3 space-x-3 text-xl">
+                    <a href="#" class=" bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-sm transition-all duration-300 ease-in-out">
+                        Email me
+                    </a>                  
+                    <a href="/resume.pdf" class="flex items-center text-gray font-bold" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>                      
+                        <span class="ml-2 hover:underline">Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Navbar -->
+    <div class="floating-navbar">
+        <a href="https://www.linkedin.com/" class="navbar-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+            </svg>
+        </a>
+        <a href="https://github.com/" class="navbar-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 72 72">
+                <path d="M36,12c13.255,0,24,10.745,24,24c0,10.656-6.948,19.685-16.559,22.818c0.003-0.009,0.007-0.022,0.007-0.022	s-1.62-0.759-1.586-2.114c0.038-1.491,0-4.971,0-6.248c0-2.193-1.388-3.747-1.388-3.747s10.884,0.122,10.884-11.491	c0-4.481-2.342-6.812-2.342-6.812s1.23-4.784-0.426-6.812c-1.856-0.2-5.18,1.774-6.6,2.697c0,0-2.25-0.922-5.991-0.922	c-3.742,0-5.991,0.922-5.991,0.922c-1.419-0.922-4.744-2.897-6.6-2.697c-1.656,2.029-0.426,6.812-0.426,6.812	s-2.342,2.332-2.342,6.812c0,11.613,10.884,11.491,10.884,11.491s-1.097,1.239-1.336,3.061c-0.76,0.258-1.877,0.576-2.78,0.576	c-2.362,0-4.159-2.296-4.817-3.358c-0.649-1.048-1.98-1.927-3.221-1.927c-0.817,0-1.216,0.409-1.216,0.876s1.146,0.793,1.902,1.659	c1.594,1.826,1.565,5.933,7.245,5.933c0.617,0,1.876-0.152,2.823-0.279c-0.006,1.293-0.007,2.657,0.013,3.454	c0.034,1.355-1.586,2.114-1.586,2.114s0.004,0.013,0.007,0.022C18.948,55.685,12,46.656,12,36C12,22.745,22.745,12,36,12z"></path>
+            </svg>
+        </a>
+        <a href="https://www.youtube.com/" class="navbar-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+            </svg>
+        </a>
+        <a href="https://dribbble.com/" class="navbar-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
+                <path d="M3.5 6.63C4.38 5.25 5.58 4.1 7.01 3.3c2.07.68 4.32 2 6.05 3.97C10.16 8.33 6.76 8.34 3.5 6.63zM6.43 20.35c-2.71-1.79-4.5-4.86-4.5-8.35 0-1.26.23-2.47.67-3.58 2.11 1.1 4.27 1.59 6.36 1.59 1.88 0 3.69-.39 5.34-1.07.37.6.69 1.26.95 1.96-.95.34-1.89.79-2.78 1.34C9.4 14.16 7.24 17.06 6.43 20.35zM9.71 2.25C10.42 2.09 11.17 2 11.93 2c2.28 0 4.37.76 6.05 2.04-.85.92-1.88 1.73-3.03 2.37C13.47 4.57 11.59 3.19 9.71 2.25zM15.94 13.89c.46 4.66-1.6 7.53-1.85 7.87-.01 0-.01.01-.01.01C13.39 21.92 12.67 22 11.93 22c-1.3 0-2.53-.25-3.67-.7.59-2.98 2.49-5.64 5.26-7.36.73-.46 1.49-.83 2.27-1.11C15.85 13.17 15.9 13.53 15.94 13.89zM21.92 12.34c-.12 3.54-2.07 6.62-4.95 8.3.66-1.6 1.26-3.96.96-6.95-.05-.48-.12-.95-.21-1.4C19.16 12.01 20.59 12.02 21.92 12.34zM17.19 10.36c-.3-.82-.66-1.59-1.09-2.3 1.27-.73 2.41-1.63 3.34-2.66 1.19 1.35 2.02 3.02 2.34 4.87C20.3 10.01 18.74 10.04 17.19 10.36z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Service -->
+    <section class="services">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="block md:flex items-start justify-between">
+                <h2 class="text-grey-900 text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                    Industry Expereinced with multiple successful Projects
+                </h2>
+                <div>
+                    <div class="flex items-center">
+                        <hr class="w-14 border-t-2 border-blue-500 mr-4">
+                        <h6 class="text-blue-500 mr-4 lg:text-xl"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Typed JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle mobile menu visibility on button click
+            $("#mobile-menu-btn").click(function () {
+                $("#mobile-menu").slideToggle();
+            });
+
+            // Close mobile menu when the window is resized
+            $(window).resize(function () {
+                if ($(window).width() > 640) {
+                    $("#mobile-menu").addClass('hidden');
+                }
+            });
+        });
+    </script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Front-end Developer', 'UI/UX Designer'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>
