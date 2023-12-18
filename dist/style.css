@@ -68,3 +68,12 @@ a.underline-effect:hover::after {
 .floating-navbar a:hover {
     width: calc(100% + 20px); /* Extend width on hover */
 }
+
+/* card service */
+.card-service{
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card-service:hover {
+    transform: translateY(-8px);
+}
