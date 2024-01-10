@@ -23,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
 </head>
 
-<body class="" style="background-color: #F8F9FB; font-family: 'Noto Sans', sans-serif;">
+<body class="" style="background-color: #fcfcfd; font-family: 'Noto Sans', sans-serif;">
     <!-- navbar -->
     <nav class="py-2">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,32 +65,34 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero text-gray-800 py-28">
+    <section class="hero text-gray-800 py-10 lg:py-10">
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 style="font-family:'Rasa'" class="text-4xl font-bold text-blue-500 lg:leading-[94px] lg:text-[38px]">Hello, I'm Abdul Hamid Mahi</h1>
-                <h1 style="font-family:'Kadwa'" class="text-6xl mt-2 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed"></span></h1>
-                <p class="mt-4 text-gray w-full lg:w-3/6 mt-12 font-medium text-md">
-                    "Hello! I'm Abdul Hamid Mahi, a UI/UX designer & Front-End Development based in Melbourne, Australia. I am 
-                    eager to contribute my diverse skills and creative problem-solving to the dynamic IT landscape. Let's explore impactful possibilities!"
-                </p>
-            <div class="mt-10">
+    
+            <h1 style="font-family:'Rasa'" class="text-4xl font-bold text-blue-500 lg:leading-[94px] lg:text-[38px]">
+                Hello, I'm Abdul Hamid Mahi
+            </h1>
+            <h1 style="font-family:'Kadwa'" class="text-7xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
+                <span id="typed"></span>
+            </h1>
+            <p class="mt-4 w-full lg:w-3/6 mt-12 font-medium text-lg text-gray-700">
+                "Hello! I'm Abdul Hamid Mahi, a UI/UX designer & Front-End Developer based in Melbourne, Australia."
+            </p>
+            <div class="mt-6">
                 <div style="font-family:'Rasa'" class="mt-6 flex items-center gap-3 space-x-3 text-xl">
-                    <a href="#" class=" bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-sm transition-all duration-300 ease-in-out">
+                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-sm transition-all duration-300 ease-in-out">
                         Email me
-                    </a>                  
-                    <a href="/resume.pdf" class="flex items-center text-gray font-bold" download>
+                    </a>
+                    <a href="/resume.pdf" class="flex items-center text-gray-800 font-bold" download>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                        </svg>                      
+                        </svg>
                         <span class="ml-2 hover:underline">Download CV</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div>
-            
-        </div>
     </section>
+    
 
     <!-- Floating Navbar -->
     <div class="floating-navbar">
@@ -119,35 +121,51 @@
     <!-- About Me -->
     <section class="About-me">
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 style="font-family:'Kadwa'" class="text-grey-900 text-5xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+            <h2 style="font-family:'Kadwa'" class="text-grey-900 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5 py-2">
                 About me<span class="text-blue-500 text-6xl">.</span></span>
             </h2>
             <div class="flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
                 <!-- Vertical hr with adjusted width and boldness -->
-                <hr class="w-2 h-6 border-l-4 border-blue-500 mr-4 md:mr-2">
-            
+                <hr class="w-2 h-12 border-l-8 border-blue-500 mr-4 md:mr-2">          
                 <!-- Concise two-line description -->
-                <p class="text-gray font-medium">Recent graduate from Swinburne. Skilled in front-end development and UI/UX design, with a focus on web technologies.</p>
-            </div>                                         
+                <p class="ml-2 text-gray-700 font-medium text-lg">Creating visually appealing and fully functional websites is my passion, and I approach each new challenge with utmost dedication and enthusiasm.</p>
+            </div>
+            
+            <div class=" reveal flex flex-col md:flex-row space-x-10 py-6 mt-10">
+                <!-- First Grid -->
+                <div class="w-full md:w-1/3">
+                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mb-4">My Skill Stack<span class="text-blue-500 text-3xl">.</span></span></h2>
+                    <div class="bg-gray-100 card-service shadow-md rounded-sm px-6 py-16 mt-8 md:mt-0">
+                        <!-- Add your skills or icons here -->
+                    </div>
+                </div>
+            
+                <!-- Second Grid -->
+                <div class="w-full md:w-2/3">
+                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mb-4">Placeholder Heading<span class="text-blue-500 text-3xl">.</span></span></h2>
+                    <div class="bg-gray-100 card-service shadow-md rounded-sm px-6 py-16 mt-8 md:mt-0">
+                        <p class="text-gray-700 text-sm mb-4 leading-5">
+                        </p>
+                    </div>
+                </div>
+            </div>                                                    
         </div>
     </section>
+    
 
     <!-- Service -->
-    <section class="services">
+    <section class="services py-20">
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="block md:flex items-start justify-between">
-                <h2 style="font-family:'Kadwa'" class="text-grey-900 text-5xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
-                    Services<span class="text-blue-500 text-6xl">.</span></span>
-                </h2>
-                <div class="mt-6 md:mt-0 w-full md:w-[360px]">
-                    <div class="flex items-center">
-                        <hr class="w-14 border-t-4 rounded-full border-blue-500 mr-4">
-                        <h6 style="font-family:'Rasa'" class="text-blue-500 text-3xl font-bold mr-4 lg:text-3xl">Services</h6>
-                    </div>
-                    <p class="mt-2 text-gray font-medium">I offer a wide range of services which will ensure the success of your project</p> 
-                </div>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
+            <h2 style="font-family:'Kadwa'" class="text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                Services<span class="text-blue-500 text-6xl">.</span></span>
+            </h2>
+            <div class="flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
+                <!-- Vertical hr with adjusted width and boldness -->
+                <hr class="w-2 h-6 border-l-8 border-blue-500 mr-4 md:mr-2">          
+                <!-- Concise two-line description -->
+                <p class="text-gray-700 font-medium">Recent graduate from Swinburne. Skilled in front-end development and UI/UX design, with a focus on web technologies.</p>
+            </div>                                         
+            <div class="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
                 <!-- Card 1: UI/UX Design -->
                 <div style="position: relative; z-index: 1;" class="bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">                  
                     <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +188,7 @@
                     <img width="100" height="100" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/100/external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx.png" alt="external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx"/>                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
                         <circle cx="40" cy="40" r="40" fill="#3b82f6"/>
                     </svg>
-                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Frontend Dev</h2>
+                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Website Dev</h2>
                     <!-- Paragraph -->
                     <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Building responsive and interactive web applications with a focus on user interface and functionality. Proficient in technologies like React, Redux, Vue, and incorporating modern design principles for an optimal user experience.</p>
                 </div>
@@ -190,7 +208,16 @@
             </div>                
         </div>
     </section>
-    
+
+    <!-- Projects -->
+    <section class="services py-20">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 style="font-family:'Kadwa'" class="text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                Projects<span class="text-blue-500 text-6xl">.</span></span>
+            </h2>
+        </div>
+    </section>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Typed JS -->
@@ -213,11 +240,32 @@
     </script>
     <script>
         var typed = new Typed('#typed', {
-            strings: ['Front-end Developer', 'UI/UX Designer'],
+            strings: ['Web Developer', 'UI/UX Designer'],
             typeSpeed: 80,
             backSpeed: 50,
             loop: true
         });
+    </script>
+    <script>
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
     </script>
 
 </body>
