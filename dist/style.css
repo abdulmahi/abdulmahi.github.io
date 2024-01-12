@@ -97,3 +97,8 @@ section{
     opacity: 1;
 }
 
+.border-style {
+    border-top: 1px solid #1f2937;
+    width: 100%;
+    margin-top: 16px;
+}
