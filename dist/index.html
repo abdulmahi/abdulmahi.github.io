@@ -21,6 +21,8 @@
     <!-- Styling links -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
+    <!-- remix icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
 </head>
 
 <body class="" style="background-color: #fcfcfd; font-family: 'Noto Sans', sans-serif;">
@@ -220,7 +222,7 @@
 
     <!-- Contact -->
     <section class="contact Section" id="contact">
-        <div class="Contact-container grid">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="contact-data">
                 <h2 style="font-family:'Kadwa'" class="text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                     Contact<span class="text-blue-500 text-6xl">.</span></span>
@@ -259,11 +261,40 @@
                             <textarea name="user-message" id="message" class="contact-input" required placeholder="Message"></textarea>
                             <label for="message" class="contact-label" id="name">Message</label>
                         </div>
+
+                        <button type="submit" class="contact-button button">
+                            <i class="ri-send-plane-line"></i>Send Message
+                        </button>
                     </div>
                 </form>
             </div>
 
             <div class="contact-social">
+                <img src="assets/img/curved-arrow.svg" alt="" class="contact-social-arrow">
+                
+                <div class="contact-social-data">
+                    <div>
+                        <p class="contact_social-description-1">
+                            Does not send emails
+                        </p>
+
+                        <p class="contact-scoial-description-1">
+                            Write on my social networks
+                        </p>
+                    </div>
+                    <div class="contact-social-links">
+                        <a href="" target="_blank" class="contact-social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="" target="_blank" class="contact-social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="" target="_blank" class="contact-social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                    </div>
+                </div>
 
             </div>
         </div>
