@@ -132,3 +132,43 @@ section{
     bottom: -1.6rem;
     left: 0;
 } */
+
+.contact{
+    padding-bottom: 0;
+}
+
+.contact-container{
+    position: relative;
+    grid-template-rows: 300px max-content max-content;
+    row-gap: 0;
+}
+
+.contact-data{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #f3f4f6;
+    padding: 3rem 1.5rem 3.5rem;
+    margin-left: auto;
+    border-bottom: 8px solid #3b82f6;
+    z-index: 5;
+    transition: #111827 .4s;
+}
+
+.contact-data .section-title-2{
+    margin: 0 0 1.5rem;
+    transform: translateX(-4rem);
+}
+
+.contact-description-1{
+    margin-bottom: 2rem;
+}
+
+.contact-description-2{
+    margin-bottom: 2rem;
+}
+
+.contact-data .geometric-box{
+    top: 2rem;
+    right: 2.5rem;
+}
