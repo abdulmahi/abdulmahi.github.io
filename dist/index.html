@@ -40,8 +40,8 @@
                 <!-- navlink -->
                 <div style="font-family:'Rasa'" class="hidden sm:block ml-auto">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#" class="text-gray-800 px-3 py-2 text-lg font-bold underline-effect">Home</a>
-                        <a href="#" class="text-gray-800 px-3 py-2 text-lg font-bold underline-effect">Skills</a>
+                        <a href="#" class="text-gray-800 px-3 py-2 text-lg font-bold underline-effect">Home</a> 
+                        <a href="#" class="text-gray-800 px-3 py-2 text-lg font-bold underline-effect">Services</a>
                         <a href="#" class="text-gray-800 px-3 py-2 text-lg font-bold underline-effect">Projects</a>
                         <a href="#" class="bg-blue-500 text-white px-5 rounded-sm py-3 text-lg font-bold transition-all duration-300 ease-in-out hover:bg-blue-600">Contact Me</a>
                     </div>
@@ -227,7 +227,7 @@
     <section class="contact section" id="contact">
         <div class="contact-container grid">
             <div class="contact-data">
-                <h2 style="font-family:'Kadwa'" class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5 section-title-2">
+                <h2 style="font-family:'Kadwa'" class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 section-title-2">
                     Contact<span class="text-blue-500 text-6xl">.</span></span>
                 </h2>
 
@@ -244,14 +244,14 @@
                 <div class="geometric-box"></div>
             </div> 
             <div class="contact-mail">
-                <h2 class="contact-title">
+                <h2 style="font-family:'Kadwa'" class="contact-title text-3xl font-medium">
                     Send Me A Message
                 </h2>
 
                 <form action="" class="contact-form" id="contact-form">
-                    <div class="contact-group">
+                    <div style="font-family:'Rasa'" class="contact-group">
                         <div class="contact-box">
-                            <input type="text" name="user_name" class="contact-input" id="name" required placeholder="FirstName ">
+                            <input type="text" name="user_name" class="contact-input" id="name" required placeholder="First Name ">
                             <label for="name" class="contact-label">First Name</label>
                         </div>
 
@@ -265,15 +265,15 @@
                             <label for="subject" class="contact-label">Subject</label>
                         </div>
 
-                        <div class="contact-box contact area">
+                        <div class="contact-box contact-area">
                             <textarea name="user_message" id="message" class="contact-input" required placeholder="Message"></textarea>
                             <label for="message" class="contact-label">Message</label>
                         </div>                        
 
                         <p class="contact_message" id="contact-message"></p>
 
-                        <button type="submit" class="contact-button button">
-                            <i class="ri-send-plane-line"></i>Send Message
+                        <button type="submit" class="contact-button button font-medium text-xl">
+                            <i class="ri-send-plane-line mr-2"></i>Send Message
                         </button>
                     </div>
                 </form>
