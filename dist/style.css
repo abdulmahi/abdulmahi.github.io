@@ -429,9 +429,16 @@ section{
     .contact-data .section-title-2{
         transform: translateX(0);
     }
+
+
 }
 
-@media screen and (max-width: 576px){
+@media screen and (min-width: 576px){
+    .projects-container{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }  
+    
     .contact-data{
         width: 350px;
         padding: 4rem 1.5rem;
@@ -471,6 +478,27 @@ section{
 }
 
 @media screen and (min-width: 1150px){
+
+    .projects-container{
+        grid-template-columns: repeat(3, 352px);
+        padding-block: 3rem 1rem;
+    }
+
+    .project-card{
+        padding: 1.25rem 1.25rem 2.5rem;
+    }
+
+    .project-image{
+        margin-bottom: 1rem;
+    }
+
+    .projects-content{
+        margin-bottom: 2rem;
+    }
+
+    .project-button{
+        right: 1.25rem;
+    }
 
     .contact-container{
         grid-template-columns: 450px 760px;
