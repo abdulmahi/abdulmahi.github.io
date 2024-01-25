@@ -23,6 +23,8 @@
     <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
     <!-- remix icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -136,48 +138,112 @@
             </div>
 
             <div class="container py-16 md:py-20" id="work">
-                <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+                <h2 style="font-family:'Kadwa'" class="text-center text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
                     My work experience
                 </h2>
-                <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                    Here's what I did before freelancing
-                </h3>
 
-                <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-                    <!-- First Work Experience -->
-                    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-                        <div class="md:w-2/5">
-                            <!-- Replace the logo with a card -->
-                            <div class="bg-white shadow-md rounded-md p-4 flex items-center">
-                                <span class="shrink-0">
-                                    <!-- You can add an icon here if needed -->
-                                </span>
-                                <div class="ml-3">
-                                    <span class="block font-body font-bold text-grey-40">Apr 2015 - Mar 2018</span>
-                                    <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">
-                                        Frontend Developer
-                                    </span>
-                                    <ul class="list-disc pl-5 pt-2">
-                                        <!-- Add your bullet points here -->
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                        <li>Vestibulum mattis felis vitae risus pulvinar tincidunt.</li>
-                                        <li>Nam ac venenatis enim.</li>
-                                    </ul>
-                                </div>
+                <div class="Container">
+                    <div class="js-timeline ag-timeline">
+                      <!-- Progress Bar Line -->
+                      <div class="js-timeline_line ag-timeline_line">
+                        <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                      </div>
+                  
+                      <div class="ag-timeline_list">
+                  
+                        <!-- Card 1 -->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                <div class="ag-timeline-card_point">01</div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="md:w-3/5">
-                            <!-- ... (existing code) ... -->
-                        </div>
+                            <div class="ag-timeline-card_item">
+                              <div class="ag-timeline-card_inner">
+                                <h3 class="text-3xl text-gray-900">Card Title 1</h3>
+                                <p class="text-xl text-gray-500">Subtitle 1</p>
+                                <ul class="list-disc ml-4 mt-2 text-gray-500">
+                                  <li>Lorem ipsum dolor sit amet</li>
+                                  <li>Consectetur adipiscing elit</li>
+                                  <li>Sed do eiusmod tempor</li>
+                                </ul>
+                              </div>
+                              <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                          </div>
+                  
+                        <!-- Card 2 -->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                              <div class="ag-timeline-card_meta-box">
+                                <h3 class="text-3xl text-gray-900">Card Title 1</h3>
+                                <p class="text-xl text-gray-500">Subtitle 1</p>
+                              </div>
+                              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                <div class="ag-timeline-card_point">01</div>
+                              </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                              <div class="ag-timeline-card_inner">
+                                <ul class="list-disc ml-4 mt-2 text-gray-500">
+                                  <li>Lorem ipsum dolor sit amet</li>
+                                  <li>Consectetur adipiscing elit</li>
+                                  <li>Sed do eiusmod tempor</li>
+                                </ul>
+                              </div>
+                              <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                          </div>
+                  
+                        <!-- Card 3 -->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                              <div class="ag-timeline-card_meta-box">
+                                <h3 class="text-3xl text-gray-900">Card Title 1</h3>
+                                <p class="text-xl text-gray-500">Subtitle 1</p>
+                              </div>
+                              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                <div class="ag-timeline-card_point">01</div>
+                              </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                              <div class="ag-timeline-card_inner">
+                                <ul class="list-disc ml-4 mt-2 text-gray-500">
+                                  <li>Lorem ipsum dolor sit amet</li>
+                                  <li>Consectetur adipiscing elit</li>
+                                  <li>Sed do eiusmod tempor</li>
+                                </ul>
+                              </div>
+                              <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                          </div>
+                  
+                        <!-- Card 4 -->
+                        <div class="js-timeline_item ag-timeline_item">
+                            <div class="ag-timeline-card_box">
+                              <div class="ag-timeline-card_meta-box">
+                                <h3 class="text-3xl text-gray-900">Card Title 1</h3>
+                                <p class="text-xl text-gray-500">Subtitle 1</p>
+                              </div>
+                              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                <div class="ag-timeline-card_point">01</div>
+                              </div>
+                            </div>
+                            <div class="ag-timeline-card_item">
+                              <div class="ag-timeline-card_inner">
+                                <ul class="list-disc ml-4 mt-2 text-gray-500">
+                                  <li>Lorem ipsum dolor sit amet</li>
+                                  <li>Consectetur adipiscing elit</li>
+                                  <li>Sed do eiusmod tempor</li>
+                                </ul>
+                              </div>
+                              <div class="ag-timeline-card_arrow"></div>
+                            </div>
+                          </div>
+                      </div>
                     </div>
-
-                    <!-- Repeat the above structure for other work experiences -->
-
+                  </div>
                 </div>
-            </div>
-
-            <div class="reveal flex flex-col md:flex-row space-x-10 py-6 mt-10">
-                <!-- ... (existing code) ... -->
             </div>
         </div>
     </section>
@@ -636,6 +702,77 @@
 
         contactForm.addEventListener('submit', sendEmail);
 
+    </script>
+
+    <script>
+                (function ($) {
+        $(function () {
+
+            $(window).on('scroll', function () {
+            fnOnScroll();
+            });
+
+            $(window).on('resize', function () {
+            fnOnResize();
+            });
+
+            var agTimeline = $('.js-timeline'),
+            agTimelineLine = $('.js-timeline_line'),
+            agTimelineLineProgress = $('.js-timeline_line-progress'),
+            agTimelinePoint = $('.js-timeline-card_point-box'),
+            agTimelineItem = $('.js-timeline_item'),
+            agOuterHeight = $(window).outerHeight(),
+            agHeight = $(window).height(),
+            f = -1,
+            agFlag = false;
+
+            function fnOnScroll() {
+            agPosY = $(window).scrollTop();
+
+            fnUpdateFrame();
+            }
+
+            function fnOnResize() {
+            agPosY = $(window).scrollTop();
+            agHeight = $(window).height();
+
+            fnUpdateFrame();
+            }
+
+            function fnUpdateWindow() {
+            agFlag = false;
+
+            agTimelineLine.css({
+                top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+                bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+            });
+
+            f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+            }
+
+            function fnUpdateProgress() {
+            var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+            i = agTop + agPosY - $(window).scrollTop();
+            a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+            n = agPosY - a + agOuterHeight / 2;
+            i <= agPosY + agOuterHeight / 2 && (n = i - a);
+            agTimelineLineProgress.css({height: n + "px"});
+
+            agTimelineItem.each(function () {
+                var agTop = $(this).find(agTimelinePoint).offset().top;
+
+                (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+            })
+            }
+
+            function fnUpdateFrame() {
+            agFlag || requestAnimationFrame(fnUpdateWindow);
+            agFlag = true;
+            }
+
+        });
+        })(jQuery);
     </script>
 
 </body>
