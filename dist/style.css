@@ -587,9 +587,12 @@ section{
 
 /* responsive timeline animation */
 .ag-timeline_item {
-	margin: 0 0 50px;
-	position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
+
 .ag-timeline_item:nth-child(2n) {
 	text-align: right;
 }
@@ -601,71 +604,66 @@ section{
 	margin: 0 auto;
 	position: relative;
 }
+
 .ag-timeline_line {
-	width: 8px;
-	background-color: #393935;
+	width: 10px;
+	background-color: #9ca3af;
 	position: absolute;
 	top: 2px;
 	left: 50%;
 	bottom: 0;
 	overflow: hidden;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
 }
 
 .ag-timeline_line-progress {
 	width: 100%;
 	height: 20%;
-	background-color: #03a9f4;
+	background-color: #3b82f6;
 }
 
 .ag-timeline-card_box {
-	padding: 0 0 20px 50%;
+    padding: 0 0 20px 30%; /* Reduced left padding */
 }
 
-.ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+/* .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
 	padding: 0 50% 20px 0;
-}
+} */
 
 .ag-timeline-card_point-box {
 	display: inline-block;
 	margin: 0 14px 0 -28px;
 }
 
-.ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+/* .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
 	margin: 0 -28px 0 14px;
-}
+} */
 
 .ag-timeline-card_point {
-	height: 50px;
-	line-height: 50px;
+	height: 60px;
+	line-height: 60px;
 	width: 50px;
-	border: 3px solid #03a9f4;
-	background-color: #1d1d1b;
+    padding: 15px;
+	border: 7px solid #9ca3af;
+	background-color: #fcfcfd;
 	text-align: center;
-	font-family: 'ESL Legend', sans-serif;
-	font-size: 20px;
-	color: #FFF;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
+	font-size: 45px;
+	color: #9ca3af;
+    font-weight: 800;
 	border-radius: 50%;
 }
 
 .js-ag-active .ag-timeline-card_point {
-	color: #1d1d1b;
-	background-color: #03a9f4;
+	border: 7px solid #3b82f6;
+    color: #3b82f6;
+    font-weight: 800;
 }
 
-.ag-timeline-card_meta-box {
+/* .ag-timeline-card_meta-box {
 	display: inline-block;
-}
+} */
 
 .ag-timeline-card_meta {
 	margin: 10px 0 0;
-	font-family: 'ESL Legend', sans-serif;
 	font-weight: bold;
 	font-size: 28px;
 	color: #03a9f4;
@@ -677,43 +675,27 @@ section{
 	margin: -77px 0 0;
 	background-color: #03a9f4;
 	opacity: 0;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	border-radius: 6px;
-	-webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-	-moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-	-o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-	box-shadow: 0 0 0 0 rgba(0,0,0,.5);
-	-webkit-transition: -webkit-transform .5s, opacity .5s;
-	-moz-transition: -moz-transform .5s, opacity .5s;
-	-o-transition: -o-transform .5s, opacity .5s;
 	transition: transform .5s, opacity .5s;
 	position: relative;
+    padding-top: 20px;
 }
 
 .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
-	-webkit-transform: translateX(-200%);
-	-moz-transform: translateX(-200%);
-	-ms-transform: translateX(-200%);
-	-o-transform: translateX(-200%);
 	transform: translateX(-200%);
 }
 
 .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-	-webkit-transform: translateX(200%);
-	-moz-transform: translateX(200%);
-	-ms-transform: translateX(200%);
-	-o-transform: translateX(200%);
 	transform: translateX(200%);
 }
 
 .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
 .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-	opacity: 1;
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
+    /* Makes element visible */
+	opacity: 1; 
+     /* moves the element back to its original 
+    position on the screen, creating an animation effect where the 
+    timeline cards slide into view from the left or right  */
 	transform: translateX(0);
 }
 
@@ -726,10 +708,6 @@ section{
 	position: absolute;
 	top: 0;
 	right: 0;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
@@ -743,12 +721,8 @@ section{
   left: 0;
 }
 
-.ag-timeline-card_img {
-	width: 100%;
-	border: 1px solid #03a9f4;
-}
 
-/*--- Responsive Code ---*/
+/* --- Responsive Code ---
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
 	left: 30px;
@@ -829,5 +803,5 @@ section{
   .Container {
     width: 960px;
   }
-}
+} */
 
