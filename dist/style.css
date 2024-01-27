@@ -586,33 +586,33 @@ section{
 }
 
 /* responsive timeline animation */
-.ag-timeline_item {
-    min-height: 50vh;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-}
 
-.ag-timeline_item:nth-child(2n) {
-	text-align: right;
+.timeline-Container{
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+    height: 200vh;
+    display: inline-block;
 }
 
 .ag-timeline {
 	display: inline-block;
-	width: 100%;
 	max-width: 100%;
-	margin: 0 auto;
 	position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 .ag-timeline_line {
-	width: 10px;
-	background-color: #9ca3af;
-	position: absolute;
-	top: 2px;
-	left: 50%;
-	bottom: 0;
-	overflow: hidden;
+    width: 10px;
+    background-color: #9ca3af;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    overflow: hidden;
 }
 
 .ag-timeline_line-progress {
@@ -621,26 +621,15 @@ section{
 	background-color: #3b82f6;
 }
 
-.ag-timeline-card_box {
-    padding: 0 0 20px 30%; /* Reduced left padding */
-}
-
-/* .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-	padding: 0 50% 20px 0;
-} */
-
 .ag-timeline-card_point-box {
-	display: inline-block;
-	margin: 0 14px 0 -28px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
-
-/* .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-	margin: 0 -28px 0 14px;
-} */
 
 .ag-timeline-card_point {
 	height: 60px;
-	line-height: 60px;
 	width: 50px;
     padding: 15px;
 	border: 7px solid #9ca3af;
@@ -658,27 +647,32 @@ section{
     font-weight: 800;
 }
 
-/* .ag-timeline-card_meta-box {
-	display: inline-block;
-} */
+.ag-timeline_item {
+	margin: 0 0 50px;
+	position: relative;
+}
+.ag-timeline_item:nth-child(2n) {
+	text-align: right;
+}
 
-.ag-timeline-card_meta {
-	margin: 10px 0 0;
-	font-weight: bold;
-	font-size: 28px;
-	color: #03a9f4;
+.ag-timeline_item:nth-child(2n) {
+	text-align: right;
 }
 
 .ag-timeline-card_item {
 	display: inline-block;
-	width: 45%;
-	margin: -77px 0 0;
+	width: 49%;
 	background-color: #03a9f4;
 	opacity: 0;
-	border-radius: 6px;
+    padding: 3rem 1.5rem 2.5rem;
 	transition: transform .5s, opacity .5s;
 	position: relative;
     padding-top: 20px;
+    background-color: #f3f4f6;
+    border-bottom: 8px solid #3b82f6;
+    /* width: 360px;
+    height: 360px;
+    margin-left: auto;*/
 }
 
 .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
@@ -703,7 +697,7 @@ section{
 	height: 18px;
 	width: 18px;
 	margin-top: 20px;
-	background-color: #03a9f4;
+	background-color: #f3f4f6;
 	z-index: -1;
 	position: absolute;
 	top: 0;
