@@ -610,6 +610,7 @@ section{
     position: absolute;
     top: 30px;
     left: 50%;
+    margin-top: -100px;
     transform: translate(-50%);
     bottom: 0;
     overflow: hidden;
@@ -648,7 +649,7 @@ section{
 }
 
 .ag-timeline_item {
-	margin: 0 0 50px;
+	margin-bottom: 200px;
 	position: relative;
 }
 .ag-timeline_item:nth-child(2n) {
@@ -661,7 +662,8 @@ section{
 
 .ag-timeline-card_item {
 	display: inline-block;
-	width: 49%;
+	width: 340px;
+    height: auto;
 	background-color: #03a9f4;
 	opacity: 0;
     padding: 3rem 1.5rem 2.5rem;
@@ -670,9 +672,7 @@ section{
     padding-top: 20px;
     background-color: #f3f4f6;
     border-bottom: 8px solid #3b82f6;
-    /* width: 360px;
-    height: 360px;
-    margin-left: auto;*/
+    margin-left: auto;
 }
 
 .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
@@ -683,14 +683,22 @@ section{
 	transform: translateX(200%);
 }
 
-.js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
 .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
     /* Makes element visible */
 	opacity: 1; 
      /* moves the element back to its original 
     position on the screen, creating an animation effect where the 
     timeline cards slide into view from the left or right  */
-	transform: translateX(0);
+	transform: translateX(70%);
+}
+
+.js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+    /* Makes element visible */
+	opacity: 1; 
+    /* moves the element back to its original 
+   position on the screen, creating an animation effect where the 
+   timeline cards slide into view from the left or right  */
+   transform: translateX(-70%);
 }
 
 .ag-timeline-card_arrow {
