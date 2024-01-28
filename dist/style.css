@@ -610,7 +610,7 @@ section{
     position: absolute;
     top: 30px;
     left: 50%;
-    margin-top: -100px;
+    margin-top: -50px;
     transform: translate(-50%);
     bottom: 0;
     overflow: hidden;
@@ -651,13 +651,7 @@ section{
 .ag-timeline_item {
 	margin-bottom: 200px;
 	position: relative;
-}
-.ag-timeline_item:nth-child(2n) {
-	text-align: right;
-}
-
-.ag-timeline_item:nth-child(2n) {
-	text-align: right;
+    align-items: left;
 }
 
 .ag-timeline-card_item {
@@ -723,31 +717,25 @@ section{
   left: 0;
 }
 
-
-/* --- Responsive Code ---
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
 	left: 30px;
   }
 
+  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+  .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+	transform: translateX(200%);
+}
+
   .ag-timeline_item:nth-child(2n) {
 	text-align: left;
   }
 
-  .ag-timeline-card_box,
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
-	padding: 0 0 20px;
-  }
-  
-  .ag-timeline-card_meta-box {
-    display: none;
-  }
-  
   .ag-timeline-card_point-box,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
-    margin: 0 0 0 8px;
+    margin: 0 0 0 -230px;
   }
-  
+
   .ag-timeline-card_point {
     height: 40px;
     line-height: 40px;
@@ -756,18 +744,18 @@ section{
   
   .ag-timeline-card_item {
     width: auto;
-    margin: -65px 0 0 75px
+    margin: -5px 0 0 75px
   }
   
-  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
-  .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
-    -webkit-transform: translateX(200%);
-    -moz-transform: translateX(200%);
-    -ms-transform: translateX(200%);
-    -o-transform: translateX(200%);
-    transform: translateX(200%);
-  }
-  
+  .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+  .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item{
+    /* Makes element visible */
+	opacity: 1; 
+    /* moves the element back to its original 
+   position on the screen, creating an animation effect where the 
+   timeline cards slide into view from the left or right  */
+   transform: translateX(10%);
+}
   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
     right: auto;
     left: 0;
@@ -779,13 +767,8 @@ section{
 }
 
 @media only screen and (max-width: 767px) {
-  .Container {
+  .timeline-Container {
     width: 96%;
-  }
-
-  .ag-timeline-card_img {
-    height: auto;
-    width: auto;
   }
 }
 
@@ -796,14 +779,14 @@ section{
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .Container {
+  .timeline-Container {
     width: 750px;
   }
 }
 
 @media (min-width: 980px) and (max-width: 1161px) {
-  .Container {
+  .timeline-Container {
     width: 960px;
   }
-} */
+}
 
