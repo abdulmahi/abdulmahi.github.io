@@ -161,6 +161,14 @@ section{
     border-bottom: 8px solid #3b82f6;
     z-index: 5;
     transition: #111827 .4s;
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+.contact-data.visible {
+    /* The final state of the element */
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .contact-data .section-title-2{
@@ -187,6 +195,13 @@ section{
     padding: 5rem 1.5rem 2.5rem;
     margin-top: -2.5rem;
     transition: #111827 .4s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.contact-mail.visible{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .contact-title{

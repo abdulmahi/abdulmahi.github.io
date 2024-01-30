@@ -796,5 +796,27 @@
         })(jQuery);
     </script>
 
+    <script>
+                document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', scrollHandler);
+});
+
+function scrollHandler() {
+    // Handle multiple elements
+    var elements = document.querySelectorAll('.contact-data, .contact-mail');
+
+    elements.forEach(function(element) {
+        var position = element.getBoundingClientRect();
+
+        // Check if the element is within the viewport
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            element.classList.add('visible');
+        } else {
+            element.classList.remove('visible');
+        }
+    });
+}
+    </script>
+
 </body>
 </html>
