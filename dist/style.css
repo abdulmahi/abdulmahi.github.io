@@ -160,9 +160,9 @@ section{
     margin-left: auto;
     border-bottom: 8px solid #3b82f6;
     z-index: 5;
-    transition: #111827 .4s;
     transform: translateX(-150%);
     opacity: 0;
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .contact-data.visible {
@@ -194,9 +194,9 @@ section{
     background-color: #111827;
     padding: 5rem 1.5rem 2.5rem;
     margin-top: -2.5rem;
-    transition: #111827 .4s;
     transform: translateX(100%);
     opacity: 0;
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .contact-mail.visible{

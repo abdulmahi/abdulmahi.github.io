@@ -798,24 +798,31 @@
 
     <script>
                 document.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('scroll', scrollHandler);
+                window.addEventListener('scroll', scrollHandler);
 });
 
 function scrollHandler() {
-    // Handle multiple elements
     var elements = document.querySelectorAll('.contact-data, .contact-mail');
 
     elements.forEach(function(element) {
         var position = element.getBoundingClientRect();
 
-        // Check if the element is within the viewport
-        if (position.top < window.innerHeight && position.bottom >= 0) {
+        // Threshold for starting the animation (how far into the viewport).
+        var startAnimationThreshold = 150;
+
+        // Check if enough of the element is visible to start the animation
+        if (position.top + startAnimationThreshold < window.innerHeight && position.bottom > startAnimationThreshold) {
             element.classList.add('visible');
-        } else {
+        }
+
+        // Check if the element is not sufficiently in view to remain visible
+        if (position.bottom < startAnimationThreshold || position.top > window.innerHeight - startAnimationThreshold) {
             element.classList.remove('visible');
         }
     });
 }
+
+
     </script>
 
 </body>
