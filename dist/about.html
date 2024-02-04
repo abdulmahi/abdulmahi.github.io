@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="style.css">
+<link href="/dist/output.css" rel="stylesheet">
+<link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<!-- Styling links -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
+<!-- remix icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+<body class="" style="background-color: hsl(217, 91%, 95%); font-family: 'Noto Sans', sans-serif;">
+    <!-- navbar -->
+    <nav class="py-5">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span style="font-family:'Kadwa'" class="text-gray-800 text-2xl font-bold">AHMahi<span class="text-blue-500">.</span></span>
+                </div>
+                <!-- navlink -->
+                <div style="font-family:'Rasa'" class="hidden sm:block ml-auto">
+                    <div class="ml-10 flex items-baseline space-x-9">
+                        <a href="index.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Home</a>
+                        <a href="about.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">About</a> 
+                        <a href="#" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Services</a>
+                        <a href="#" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Projects</a>
+                        <a href="#" class="bg-blue-500 m-3 text-white px-5 rounded-sm py-3 text-xl font-bold transition-all duration-300 ease-in-out hover:bg-blue-600">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-500 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>                    
+                </div>                               
+            </div>
+            <div id="mobile-menu" class="hidden sm:hidden">
+                <div class="px-2 pt-2 space-y-5">
+                    <a href="index.html" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Home</a>
+                    <a href="about.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">About</a> 
+                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Contact</a>
+                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Projects</a>
+                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Resume</a>
+                    <!-- <div class="px-2">
+                        <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-50">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+            <h2 style="font-family:'Kadwa'" class="text-grey-900 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5 py-2">
+                About me<span class="text-blue-500 text-6xl">.</span>
+            </h2>
+            <div class="flex mt-6 mb-40 md:mt-0 w-full md:w-[360px] items-center">
+                <hr class="w-2 h-8 border-l-8 border-blue-500 mr-4 md:mr-2"><!--Should I make these sections more interactive like my heading as in texts loading?? implement later-->
+                <p class="ml-2 text-gray-700 font-medium text-lg">Creating visually appealing & fun interactive websites is my passion, and I approach each new challenge with utmost enthusiasm.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
