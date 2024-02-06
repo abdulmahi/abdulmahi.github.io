@@ -16,8 +16,6 @@ html {
     --black-color-light: hsl(0, 0%, 40%);
     --container-color: hsl(0, 0%, 83%);
     overflow-x: hidden;
-    --color-bg1: rgb(108, 0, 162);
-    --color-bg2: rgb(0, 17, 82);
     --color1: 18, 113, 255;
     --color2: 221, 74, 255;
     --color3: 100, 220, 255;
@@ -446,6 +444,67 @@ section{
     background-color: var(--white-color);
 }
 
+.hero-intro, .hero-title, .hero-desc{
+    z-index: 100;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+.home-scroll{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+}
+
+.home-scroll-text{
+    display: none;
+}
+
+.home-scroll-box{
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color .4s;
+}
+
+.home-scroll-mouse{
+    font-size: 24px;
+    font-weight: 600;
+    transition: background-color .4s;
+    padding: 2px;
+}
+
+.home-scroll-box i{
+    animation: scroll-down 3s infinite;
+}
+
+.home-scroll-mouse i {
+    animation: vibrate 0.5s infinite;
+}  
+
+@keyframes scroll-down{
+    0%{
+        transform: translateY(-0.8rem);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0.8rem);
+        opacity: 0;
+    }
+}
+
+@keyframes vibrate {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+}
 
 @media screen and (max-width: 340px){
     .container{
@@ -507,7 +566,36 @@ section{
     }
 }
 
+@media screen and (min-width: 786px){
+    .projects-container{
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
 @media screen and (min-width: 1150px){
+
+    .home-scroll{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+    
+    .home-scroll-text{
+        display: block;
+        color: #111827;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .home-scroll-box{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .home-scroll-box i{
+        font-weight: 1.25rem;
+    }
 
     .projects-container{
         grid-template-columns: repeat(3, 400px);
@@ -968,4 +1056,16 @@ section{
     }
 
 }
+
+/* .hero-desc{
+    background: linear-gradient(90deg, 
+    hsla(14, 98%, 50%, .3),
+    hsla(14, 98%, 50%, 0));
+    padding: 10px;
+} */
   
+
+
+
+
+
