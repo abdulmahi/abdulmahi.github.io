@@ -856,20 +856,22 @@ section{
     }
 }
 
-.hero{
+.gradient-bg{
     width: 100vw;
     height: 100vh;
-    position: relative;
     overflow: hidden;
     top: 0;
     left: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: -5;
 
-    svg{
+    svg {
         display: none;
-    }
+      }
 
     .floating-elements-container{
-        /* filter: url(#goo) blur(40px); */
+        filter: url(#goo) blur(40px);
         width: 100%;
         height: 100%;
     }
@@ -958,12 +960,10 @@ section{
         position: absolute;
         background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
         mix-blend-mode: var(--blending);
-
         width: 100%;
         height: 100%;
         top: -50%;
         left: -50%;
-
         opacity: 0.7;
     }
 
