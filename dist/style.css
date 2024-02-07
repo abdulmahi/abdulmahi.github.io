@@ -455,6 +455,11 @@ section{
     margin: 0 auto;
     position: absolute;
     bottom: 10%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-scroll:hover {
+    transform: translateY(6px);
 }
 
 .home-scroll-text{
@@ -471,7 +476,8 @@ section{
 }
 
 .home-scroll-mouse{
-    font-size: 24px;
+    display: grid;
+    font-size: 20px;
     font-weight: 600;
     transition: background-color .4s;
     padding: 2px;
@@ -482,7 +488,7 @@ section{
 }
 
 .home-scroll-mouse i {
-    animation: vibrate 0.5s infinite;
+    animation: vibrate 4s infinite;
 }  
 
 @keyframes scroll-down{
@@ -501,9 +507,11 @@ section{
 }
 
 @keyframes vibrate {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(2px); }
-    75% { transform: translateX(-2px); }
+    0%, 12.5% { transform: translateX(0); }
+    3.125% { transform: translateX(3px); }
+    6.25% { transform: translateX(-3px); }
+    9.375% { transform: translateX(3px); }
+    12.5%, 100% { transform: translateX(0); }
 }
 
 @media screen and (max-width: 340px){
@@ -590,6 +598,11 @@ section{
     
     .home-scroll-box{
         font-size: 20px;
+        font-weight: 600;
+    }
+
+    .home-scroll-mouse i{
+        font-size: 35px;
         font-weight: 600;
     }
     
@@ -1064,6 +1077,7 @@ section{
     padding: 10px;
 } */
   
+
 
 
 

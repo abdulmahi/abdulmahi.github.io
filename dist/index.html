@@ -25,9 +25,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body class="" style="background-color: hsl(217, 91%, 99%); font-family: 'Noto Sans', sans-serif;">
@@ -36,11 +38,11 @@
         <div class="navbar container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- logo -->
-                <div class="flex-shrink-0 flex items-center">
+                <div class="navbar-logo flex-shrink-0 flex mx-2 items-center">
                     <span style="font-family:'Kadwa'" class="text-gray-800 text-2xl font-bold">AHMahi<span class="text-blue-500">.</span></span>
                 </div>
                 <!-- navlink -->
-                <div style="font-family:'Rasa'" class="hidden sm:block ml-auto">
+                <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
                     <div class="ml-10 flex items-baseline space-x-9">
                         <a href="index.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Home</a>
                         <a href="about.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">About</a> 
@@ -81,11 +83,11 @@
             <h1 style="font-family:'Kadwa'" class="hero-title text-7xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
                 <span id="typed"></span>
             </h1>
-            <p class="hero-desc mt-4 w-full lg:w-3/6 mt-12 text-lg text-gray-700 font-semibold">
-                "Hello! I'm Abdul Hamid Mahi, a UI/UX designer & Front-End Developer based in Melbourne, Australia."
+            <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-md text-gray-800 font-semibold">
+                Hello! I'm a UI/UX designer & Developer based in Melbourne, Australia.
             </p>
-            <div class="mt-6">
-                <div style="font-family:'Rasa'" class="mt-6 flex items-center gap-3 space-x-3 text-2xl">
+            <div class="mt-6 hero-buttons">
+                <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
                     <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-7 rounded-sm transition-all duration-300 ease-in-out">
                         Email me
                     </a>
@@ -132,7 +134,7 @@
     </section>
     
 
-    <!-- Floating Navbar -->
+    <!-- Floating Navbar
     <div class="floating-navbar">
         <a href="https://www.linkedin.com/" class="navbar-link" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
@@ -154,6 +156,10 @@
                 <path d="M3.5 6.63C4.38 5.25 5.58 4.1 7.01 3.3c2.07.68 4.32 2 6.05 3.97C10.16 8.33 6.76 8.34 3.5 6.63zM6.43 20.35c-2.71-1.79-4.5-4.86-4.5-8.35 0-1.26.23-2.47.67-3.58 2.11 1.1 4.27 1.59 6.36 1.59 1.88 0 3.69-.39 5.34-1.07.37.6.69 1.26.95 1.96-.95.34-1.89.79-2.78 1.34C9.4 14.16 7.24 17.06 6.43 20.35zM9.71 2.25C10.42 2.09 11.17 2 11.93 2c2.28 0 4.37.76 6.05 2.04-.85.92-1.88 1.73-3.03 2.37C13.47 4.57 11.59 3.19 9.71 2.25zM15.94 13.89c.46 4.66-1.6 7.53-1.85 7.87-.01 0-.01.01-.01.01C13.39 21.92 12.67 22 11.93 22c-1.3 0-2.53-.25-3.67-.7.59-2.98 2.49-5.64 5.26-7.36.73-.46 1.49-.83 2.27-1.11C15.85 13.17 15.9 13.53 15.94 13.89zM21.92 12.34c-.12 3.54-2.07 6.62-4.95 8.3.66-1.6 1.26-3.96.96-6.95-.05-.48-.12-.95-.21-1.4C19.16 12.01 20.59 12.02 21.92 12.34zM17.19 10.36c-.3-.82-.66-1.59-1.09-2.3 1.27-.73 2.41-1.63 3.34-2.66 1.19 1.35 2.02 3.02 2.34 4.87C20.3 10.01 18.74 10.04 17.19 10.36z"></path>
             </svg>
         </a>
+    </div> -->
+
+    <div class="pt-20">
+
     </div>
 
     <!-- About Me -->
@@ -667,6 +673,7 @@
     <!-- Typed JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
     <script>
         $(document).ready(function () {
             // Toggle mobile menu visibility on button click
@@ -868,7 +875,7 @@ document.addEventListener('DOMContentLoaded', () => {
     move();
 });
 
-    </script>
+</script>
 
 </body>
 </html>
