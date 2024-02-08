@@ -132,6 +132,18 @@
             </div>
         </div>
     </section>
+
+    <div class="container-cube">
+        <div class="cube">
+            <div class="face">1</div>
+            <div class="face">2</div>
+            <div class="face">3</div>
+            <div class="face">4</div>
+            <div class="face">5</div>
+            <div class="face">6</div>
+        </div>
+
+    </div>
     
 
     <!-- Floating Navbar
@@ -875,6 +887,25 @@ document.addEventListener('DOMContentLoaded', () => {
     move();
 });
 
+</script>
+
+<script>
+    function rotateCube(e) {
+        var cube = document.getElementsByClassName("cube");
+        var x = e.clientX - window.innerWidth / 2;
+        var y = e.clientY - window.innerHeight / 2;
+        var q = 0.15;
+        var i;
+
+        x = x * q * 1.25;
+        y = -y * q * 1.25;
+
+        for(i = 0; i < cube.length; i++){
+            cube[i].style.transform = "rotateY(" + x +"deg) rotateX("+ y +"deg)";
+        }
+    }
+
+    document.addEventListener("mousemove", rotateCube);
 </script>
 
 </body>
