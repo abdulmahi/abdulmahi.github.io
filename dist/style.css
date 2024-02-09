@@ -6,25 +6,31 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 :root {
     /* HSL hue, saturation, lightness */
-    --white-color: hsl(0, 0%, 95%);
-    --black-color-light: hsl(0, 0%, 40%);
-    --container-color: hsl(0, 0%, 83%);
-    overflow-x: hidden;
-    --color1: 18, 113, 255;
-    --color2: 221, 74, 255;
-    --color3: 100, 220, 255;
-    --color4: 200, 50, 50;
-    --color5: 180, 180, 50;
-    --color-interactive: 140, 100, 255;
-    --circle-size: 80%;
-    --blending: hard-light;
+    --white-color: hsl(0, 0%, 95%); /* Very light gray */
+    --black-color-light: hsl(0, 0%, 40%); /* Medium dark gray */
+    --container-color: hsl(0, 0%, 83%); /* Light gray */
+    --color-bg1: rgb(108, 0, 162); /* Deep purple */
+    --color-bg2: rgb(0, 17, 82); /* Dark blue */
+    --color1: 18, 113, 255; /* Bright sky blue */
+    --color2: 221, 74, 255; /* Light purple */
+    --color3: 100, 220, 255; /* Bright cyan blue */
+    --color4: 200, 50, 50; /* Medium red */
+    --color5: 180, 180, 50; /* Mustard yellow */
+    --color-interactive: 140, 100, 255; /* Soft violet */
+    --circle-size: 80%; /* Circle size */
+    --blending: hard-light; /* Blending mode */
 }
+
 
 a {
     position: relative;
@@ -62,22 +68,13 @@ a.underline-effect:hover::after {
     border-bottom-right-radius: 10px;
 }
 
-.navbar-link {
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
+.navbar-link, .navbar-logo {
+    color: #fcfcfd;
+    opacity: 1;
+    text-shadow: 2px 2px rgba(0,0,0,0.1);
+
 }
 
-.navbar-link svg {
-    fill: #fff;
-    margin-right: 8px;
-}
-
-.navbar-link:hover {
-    text-decoration: underline;
-}
 .floating-navbar a {
     color: white;
     text-decoration: none;
@@ -603,7 +600,7 @@ section{
 
     .home-scroll-mouse i{
         font-size: 35px;
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .home-scroll-box i{
@@ -965,6 +962,7 @@ section{
     left: 0;
     pointer-events: none;
     position: absolute;
+    background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
     z-index: -5;
 
     svg {
@@ -972,7 +970,7 @@ section{
       }
 
     .floating-elements-container{
-        filter: url(#goo) blur(40px);
+        filter: url(#goo) blur(30px);
         width: 100%;
         height: 100%;
     }
@@ -1082,14 +1080,15 @@ section{
 .container-cube{
     box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: 24%;
+    top: 3%;
+    left: 23%;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 850px;
+    pointer-events: none;
 }
 
 .cube{
@@ -1124,32 +1123,41 @@ section{
 .cube .face:nth-child(2){
     transform-origin: center right;
     transform: rotateY(90deg);
-    background-color: rgb(95, 158, 160, 0.5);
+    background-color: rgb(18, 113, 255, 0.5);
 }
 
 .cube .face:nth-child(3){
     transform-origin: center center;
     transform: rotateY(180deg);
-    background-color: rgb(238, 141, 14, 0.5);
+    background-color: rgb(var(--color2), 0.5);
 }
 
 .cube .face:nth-child(4){
     transform-origin: center left;
     transform: rotateY(-90deg);
-    background-color: rgb(0, 100, 0, 0.5);
+    background-color: rgb(var(--color3), 0.5);
 }
 
 .cube .face:nth-child(5){
     transform-origin: top center;
     transform: rotateX(90deg);
-    background-color: rgb(130, 0, 0, 0.5);
+    background-color: var(--color4), 0.5;
 }
 
 .cube .face:nth-child(6){
     transform-origin: bottom center;
     transform: rotateX(-90deg);
-    background-color: rgb(30, 143, 255, 0.5);
+    background-color: rgb(var(--color5), 0.5);
 } 
 
+.hero-title, .home-scroll-text, .home-scroll-box, .home-scroll-mouse{
+    color: #fff;
+    opacity: 0.9;
+    text-shadow: 1px 3px rgba(0,0,0,0.1);
+}
 
-
+.hero-intro, .hero-cv{
+    color: #fff;
+    opacity: 0.9;
+    text-shadow: 1px 2px rgba(0,0,0,0.1);
+}

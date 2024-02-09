@@ -39,21 +39,21 @@
             <div class="flex justify-between items-center h-16">
                 <!-- logo -->
                 <div class="navbar-logo flex-shrink-0 flex mx-2 items-center">
-                    <span style="font-family:'Kadwa'" class="text-gray-800 text-2xl font-bold">AHMahi<span class="text-blue-500">.</span></span>
+                    <span style="font-family:'Kadwa'" class="text-xl font-bold">AHMahi<span class="text-blue-600">.</span></span>
                 </div>
                 <!-- navlink -->
                 <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
                     <div class="ml-10 flex items-baseline space-x-9">
-                        <a href="index.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Home</a>
-                        <a href="about.html" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">About</a> 
-                        <a href="#" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Services</a>
-                        <a href="#" class="text-gray-800 px-3 py-2 text-xl font-bold underline-effect">Projects</a>
-                        <a href="#" class="bg-blue-500 m-3 text-white px-5 rounded-sm py-3 text-xl font-bold transition-all duration-300 ease-in-out hover:bg-blue-600">Contact</a>
+                        <a href="index.html" class="navbar-link px-3 py-2 text-lg font-semibold underline-effect">Home</a>
+                        <a href="about.html" class="navbar-link px-3 py-2 text-lg font-semibold underline-effect">About</a> 
+                        <a href="#" class="navbar-link px-3 py-2 text-lg font-semibold underline-effect">Services</a>
+                        <a href="#" class="navbar-link px-3 py-2 text-lg font-semibold underline-effect">Projects</a>
+                        <a href="#" class="navbar-link bg-blue-600 m-3 text-white px-5 rounded-sm py-3 text-lg shadow-lg font-semibold transition-all duration-300 ease-in-out hover:bg-blue-700">Contact</a>
                     </div>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="sm:hidden flex items-center">
-                    <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-500 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-600 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
@@ -77,25 +77,25 @@
     <!-- Hero -->
     <section class="hero text-gray-800 py-10 lg:py-10 -mt-28">
         <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h1 style="font-family:'Rasa'" class="hero-intro text-4xl font-bold text-blue-500 lg:leading-[94px] lg:text-[38px]">
+            <h1 style="font-family:'Rasa'" class="hero-intro text-4xl lg:leading-[94px] lg:text-[38px]">
                 Hello, I'm Abdul Hamid Mahi
             </h1>
             <h1 style="font-family:'Kadwa'" class="hero-title text-7xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
                 <span id="typed"></span>
             </h1>
-            <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-md text-gray-800 font-semibold">
+            <!-- <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-gray-800 font-semibold">
                 Hello! I'm a UI/UX designer & Developer based in Melbourne, Australia.
-            </p>
+            </p> -->
             <div class="mt-6 hero-buttons">
                 <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
-                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-7 rounded-sm transition-all duration-300 ease-in-out">
+                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white shadow-lg font-semibold py-4 px-7 rounded-sm transition-all duration-300 ease-in-out">
                         Email me
                     </a>
-                    <a href="/resume.pdf" class="flex items-center text-gray-800 font-bold" download>
+                    <a href="/resume.pdf" class="hero-cv flex items-center font-semibold" download>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                         </svg>
-                        <span class="ml-2 hover:underline">Download CV</span>
+                        <span class=" ml-2 hover:underline">Download CV</span>
                     </a>
                 </div>
             </div>
@@ -892,13 +892,17 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
     function rotateCube(e) {
         var cube = document.getElementsByClassName("cube");
+        //The function captures the mouse's current position (e.clientX for horizontal, and e.clientY for vertical coordinates).
+        //It then calculates the mouse's position relative to the center of the window by subtracting half of the window's width
+        //These values (x and y) are then adjusted to control the intensity of the rotation
         var x = e.clientX - window.innerWidth / 2;
         var y = e.clientY - window.innerHeight / 2;
-        var q = 0.15;
+        //
+        var q = 0.10;
         var i;
-
-        x = x * q * 1.25;
-        y = -y * q * 1.25;
+        //The adjustment is made by multiplying them by a factor (q) which represents the sensitivity of the rotation to mouse movement
+        x = x * q * 1.05;
+        y = -y * q * 1.05;
 
         for(i = 0; i < cube.length; i++){
             cube[i].style.transform = "rotateY(" + x +"deg) rotateX("+ y +"deg)";

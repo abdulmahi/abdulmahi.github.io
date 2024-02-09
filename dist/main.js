@@ -14,12 +14,12 @@ function section1() {
         stagger: 0.1,
     });
 
-    tl.from(".cube",
-    {
-        x: 150,
-        opacity: 0,
-        stagger: 0.1,
-    });
+    // tl.from(".cube",
+    // {
+    //     x: 150,
+    //     opacity: 0,
+    //     stagger: 0.1,
+    // });
 
     tl.from(".home-scroll-mouse, .home-scroll-text, .home-scroll-box",{
         opacity: 0,
