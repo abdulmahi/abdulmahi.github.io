@@ -19,15 +19,15 @@ html {
     --white-color: hsl(0, 0%, 95%); /* Very light gray */
     --black-color-light: hsl(0, 0%, 40%); /* Medium dark gray */
     --container-color: hsl(0, 0%, 83%); /* Light gray */
-    --color-bg1: rgb(108, 0, 162); /* Deep purple */
-    --color-bg2: rgb(0, 17, 82); /* Dark blue */
+    --color-bg1: #4a1dd8; /* Deep purple */
+    --color-bg2: #1D4ED8; /* Dark blue */
     --color1: 18, 113, 255; /* Bright sky blue */
     --color2: 221, 74, 255; /* Light purple */
     --color3: 100, 220, 255; /* Bright cyan blue */
     --color4: 200, 50, 50; /* Medium red */
-    --color5: 180, 180, 50; /* Mustard yellow */
+    --color5: 255, 71, 143; /* Bright Pink */
     --color-interactive: 140, 100, 255; /* Soft violet */
-    --circle-size: 80%; /* Circle size */
+    --circle-size: 50%; /* Circle size */
     --blending: hard-light; /* Blending mode */
 }
 
@@ -40,7 +40,7 @@ a {
 a.underline-effect:after {
     content: "";
     position: absolute;
-    background-color: #588CFE;
+    background-color: #d8a71d;
     height: 3px;
     width: 0;
     left: 12px;
@@ -50,6 +50,19 @@ a.underline-effect:after {
 
 a.underline-effect:hover::after {
     width: 22px;
+}
+
+.navbar-button, .hero-button{
+    background-color: #d8a71d; 
+    color: #f3f4f6;
+}
+
+.navbar-button:hover, .hero-button:hover {
+    background-color: #e3b32c;
+}
+
+.about-me{
+    
 }
 
 /* Floating Navbar Styles */
@@ -71,7 +84,7 @@ a.underline-effect:hover::after {
 .navbar-link, .navbar-logo {
     color: #fcfcfd;
     opacity: 1;
-    text-shadow: 2px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
 
 }
 
@@ -124,7 +137,7 @@ section{
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #3b82f6;
+    background-color: #1d4ed8;
     rotate: -30deg;
 }
 
@@ -168,7 +181,7 @@ section{
     background-color: #f3f4f6;
     padding: 3rem 1.5rem 3.5rem;
     margin-left: auto;
-    border-bottom: 8px solid #3b82f6;
+    border-bottom: 8px solid #1d4ed8;
     z-index: 5;
     transform: translateX(-150%);
     opacity: 0;
@@ -293,7 +306,7 @@ section{
 }
 
 .contact-button{
-    background-color: #3b82f6;
+    background-color: #1d4ed8;
     cursor: pointer;
 }
 
@@ -356,7 +369,7 @@ section{
 }
 
 .contact-social-link:hover{
-    background-color: #3b82f6;
+    background-color: #1d4ed8;
 }
 
 /* projects */
@@ -433,7 +446,7 @@ section{
 
 .projects-link:hover,
 .projects-link:hover i{
-    color: #2563eb;
+    color: #1d4ed8;
     transition: color 0.2s ease-in-out;
 }
 
@@ -668,7 +681,7 @@ section{
         height: 410px;
         padding: 4.5rem 3.5rem 3.5rem;
         margin: 7.5rem 0 0 5.5rem;
-        border-bottom: 7px solid #3b82f6;
+        border-bottom: 7px solid #1d4ed8;
     }
 
     .contact-data .section-title-2{
@@ -747,7 +760,7 @@ section{
 .ag-timeline_line-progress {
 	width: 100%;
 	height: 20%;
-	background-color: #3b82f6;
+	background-color: #1d4ed8;
 }
 
 .ag-timeline-card_point-box {
@@ -771,8 +784,8 @@ section{
 }
 
 .js-ag-active .ag-timeline-card_point {
-	border: 7px solid #3b82f6;
-    color: #3b82f6;
+	border: 7px solid #1d4ed8;
+    color: #1d4ed8;
     font-weight: 800;
 }
 
@@ -786,14 +799,14 @@ section{
 	display: inline-block;
 	width: 340px;
     height: auto;
-	background-color: #03a9f4;
+	background-color: #1d4ed8;
 	opacity: 0;
     padding: 3rem 1.5rem 2.5rem;
 	transition: transform .5s, opacity .5s;
 	position: relative;
     padding-top: 20px;
     background-color: #f3f4f6;
-    border-bottom: 8px solid #3b82f6;
+    border-bottom: 8px solid #1d4ed8;
     margin-left: auto;
 }
 
@@ -970,7 +983,7 @@ section{
       }
 
     .floating-elements-container{
-        filter: url(#goo) blur(30px);
+        filter: url(#goo) blur(20px);
         width: 100%;
         height: 100%;
     }
