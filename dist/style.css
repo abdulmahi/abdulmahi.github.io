@@ -40,7 +40,7 @@ a {
 a.underline-effect:after {
     content: "";
     position: absolute;
-    background-color: #d8a71d;
+    background-color: #ea580c;
     height: 3px;
     width: 0;
     left: 12px;
@@ -53,7 +53,7 @@ a.underline-effect:hover::after {
 }
 
 .navbar-button, .hero-button{
-    background-color: #d8a71d; 
+    background-color: #ea580c; 
     color: #f3f4f6;
 }
 
@@ -114,6 +114,8 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+/* services card animation */
 
 .reveal{
     position: relative;
@@ -1123,9 +1125,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 180px;
+    font-size: 32px;
     color: transparent;
-    -webkit-text-stroke: 5px white;
+    -webkit-text-stroke: 1px white;
 }
 
 .cube .face:nth-child(1) {
