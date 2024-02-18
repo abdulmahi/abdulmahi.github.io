@@ -19,8 +19,8 @@ html {
     --white-color: hsl(0, 0%, 95%); /* Very light gray */
     --black-color-light: hsl(0, 0%, 40%); /* Medium dark gray */
     --container-color: hsl(0, 0%, 83%); /* Light gray */
-    --color-bg1: #4a1dd8; /* Deep purple */
-    --color-bg2: #1D4ED8; /* Dark blue */
+    --color-bg1: hsl(250, 60%, 70%) 0% ;
+    --color-bg2: hsl(250, 60%, 50%) 100%;
     --color1: 18, 113, 255; /* Bright sky blue */
     --color2: 221, 74, 255; /* Light purple */
     --color3: 100, 220, 255; /* Bright cyan blue */
@@ -29,6 +29,7 @@ html {
     --color-interactive: 140, 100, 255; /* Soft violet */
     --circle-size: 50%; /* Circle size */
     --blending: hard-light; /* Blending mode */
+    --component-color: rgb(18, 113, 255); 
 }
 
 
@@ -40,7 +41,7 @@ a {
 a.underline-effect:after {
     content: "";
     position: absolute;
-    background-color: #ea580c;
+    background-color: #a78bfa;
     height: 3px;
     width: 0;
     left: 12px;
@@ -52,13 +53,15 @@ a.underline-effect:hover::after {
     width: 22px;
 }
 
-.navbar-button, .hero-button{
-    background-color: #ea580c; 
-    color: #f3f4f6;
+.navbar-button, .hero-button {
+    background: linear-gradient(45deg, rgba(18, 113, 255, 1) 0%, rgba(51, 0, 212, 1) 50%, rgba(72, 0, 110, 1) 100%);
+    font-weight: 900; /* Adjusted to the maximum commonly supported value */
+    color: #f3f4f6; /* Ensures text color is visible */
 }
 
+
 .navbar-button:hover, .hero-button:hover {
-    background-color: #e3b32c;
+    background-color: #6d28d9;
 }
 
 .about-me{
@@ -139,7 +142,7 @@ section{
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #1d4ed8;
+    background-color: var(--component-color);
     rotate: -30deg;
 }
 
@@ -183,7 +186,7 @@ section{
     background-color: #f3f4f6;
     padding: 3rem 1.5rem 3.5rem;
     margin-left: auto;
-    border-bottom: 8px solid #1d4ed8;
+    border-bottom: 8px solid var(--component-color);
     z-index: 5;
     transform: translateX(-150%);
     opacity: 0;
@@ -308,7 +311,7 @@ section{
 }
 
 .contact-button{
-    background-color: #1d4ed8;
+    background-color: var(--component-color);
     cursor: pointer;
 }
 
@@ -371,7 +374,7 @@ section{
 }
 
 .contact-social-link:hover{
-    background-color: #1d4ed8;
+    background-color: var(--component-color);
 }
 
 /* projects */
@@ -448,7 +451,7 @@ section{
 
 .projects-link:hover,
 .projects-link:hover i{
-    color: #1d4ed8;
+    color: var(--component-color);
     transition: color 0.2s ease-in-out;
 }
 
@@ -459,6 +462,15 @@ section{
 .hero-intro, .hero-title, .hero-desc{
     z-index: 100;
     text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+.hero-intro{
+    font-family: "Kadwa";
+    background: linear-gradient(45deg, rgba(18, 113, 255, 1) 0%, rgba(51, 0, 212, 1) 50%, rgba(72, 0, 110, 1) 100%);
+    -webkit-background-clip: text;
+    font-weight: 1000;
+    display: inline;
+    -webkit-text-fill-color: transparent;
 }
 
 .home-scroll{
@@ -683,7 +695,7 @@ section{
         height: 410px;
         padding: 4.5rem 3.5rem 3.5rem;
         margin: 7.5rem 0 0 5.5rem;
-        border-bottom: 7px solid #1d4ed8;
+        border-bottom: 7px solid var(--component-color);
     }
 
     .contact-data .section-title-2{
@@ -762,7 +774,7 @@ section{
 .ag-timeline_line-progress {
 	width: 100%;
 	height: 20%;
-	background-color: #1d4ed8;
+	background-color: var(--component-color);
 }
 
 .ag-timeline-card_point-box {
@@ -786,8 +798,8 @@ section{
 }
 
 .js-ag-active .ag-timeline-card_point {
-	border: 7px solid #1d4ed8;
-    color: #1d4ed8;
+	border: 7px solid var(--component-color);
+    color: var(--component-color);
     font-weight: 800;
 }
 
@@ -801,14 +813,14 @@ section{
 	display: inline-block;
 	width: 340px;
     height: auto;
-	background-color: #1d4ed8;
+	background-color: var(--component-color);
 	opacity: 0;
     padding: 3rem 1.5rem 2.5rem;
 	transition: transform .5s, opacity .5s;
 	position: relative;
     padding-top: 20px;
     background-color: #f3f4f6;
-    border-bottom: 8px solid #1d4ed8;
+    border-bottom: 8px solid var(--component-color);
     margin-left: auto;
 }
 
@@ -977,7 +989,7 @@ section{
     left: 0;
     pointer-events: none;
     position: absolute;
-    background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+    background: linear-gradient(to bottom, var(--color-bg1), var(--color-bg2));
     z-index: -5;
 
     svg {
@@ -985,7 +997,7 @@ section{
       }
 
     .floating-elements-container{
-        filter: url(#goo) blur(20px);
+        filter: url(#goo) blur(120px);
         width: 100%;
         height: 100%;
     }
@@ -1178,6 +1190,6 @@ section{
 }
 
 .services{
-    background-color: #4a1dd8;
+    background-color: #ede9fe;
     z-index: -1;
 }
