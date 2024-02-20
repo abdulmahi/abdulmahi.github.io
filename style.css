@@ -39,7 +39,7 @@ a {
 a.underline-effect:after {
     content: "";
     position: absolute;
-    background-color: #a78bfa;
+    background-color: #f23224;;
     height: 3px;
     width: 0;
     left: 12px;
@@ -53,7 +53,7 @@ a.underline-effect:hover::after {
 
 .navbar-button, .hero-button {
     background-color: #f23224;
-    background-image: linear-gradient(90deg, #f23224 0%, #EA5131 88%, #FF613D 99%);
+    background-image: linear-gradient(45deg, #f23224 40%, #EA5131 88%, #FF613D 99%);
     font-weight: 900; /* Adjusted to the maximum commonly supported value */
     color: #f3f4f6; /* Ensures text color is visible */
 }
@@ -1189,4 +1189,20 @@ section{
 .services{
     background-color: #ede9fe;
     z-index: -1;
+}
+
+.hero-bg-svg{
+    position: absolute;
+    z-index: -3;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    left: 39%;
+    height: 550px;
+    width: 600px;
+}
+
+
+.footer{
+    background: #1c1d25;
 }
