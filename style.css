@@ -19,8 +19,7 @@ html {
     --white-color: hsl(0, 0%, 95%); /* Very light gray */
     --black-color-light: hsl(0, 0%, 40%); /* Medium dark gray */
     --container-color: hsl(0, 0%, 83%); /* Light gray */
-    --color-bg1: hsl(250, 60%, 70%) 0% ;
-    --color-bg2: hsl(250, 60%, 50%) 100%;
+    --color-bg1: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
     --color1: 18, 113, 255; /* Bright sky blue */
     --color2: 221, 74, 255; /* Light purple */
     --color3: 100, 220, 255; /* Bright cyan blue */
@@ -31,7 +30,6 @@ html {
     --blending: hard-light; /* Blending mode */
     --component-color: rgb(18, 113, 255); 
 }
-
 
 a {
     position: relative;
@@ -54,7 +52,8 @@ a.underline-effect:hover::after {
 }
 
 .navbar-button, .hero-button {
-    background: linear-gradient(45deg, rgba(18, 113, 255, 1) 0%, rgba(51, 0, 212, 1) 50%, rgba(72, 0, 110, 1) 100%);
+    background-color: #f23224;
+    background-image: linear-gradient(90deg, #f23224 0%, #EA5131 88%, #FF613D 99%);
     font-weight: 900; /* Adjusted to the maximum commonly supported value */
     color: #f3f4f6; /* Ensures text color is visible */
 }
@@ -84,22 +83,20 @@ a.underline-effect:hover::after {
     border-bottom-right-radius: 10px;
 }
 
-.navbar-link, .navbar-logo {
-    color: #fcfcfd;
+.navbar-link{
+    color: #b0b2c3;
     opacity: 1;
     text-shadow: 1px 1px rgba(0,0,0,0.1);
-
 }
 
-.floating-navbar a {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    transition: width 0.3s ease; /* Add transition for smooth animation */
+.navbar-link:hover{
+    color: #fcfcfd;
 }
 
-.floating-navbar a:hover {
-    width: calc(100% + 20px); /* Extend width on hover */
+.navbar-logo{
+    color: #f3f4f6;
+    font-style: italic;
+    font-weight: 900;
 }
 
 /* card service */
@@ -466,7 +463,7 @@ section{
 
 .hero-intro{
     font-family: "Kadwa";
-    background: linear-gradient(45deg, rgba(18, 113, 255, 1) 0%, rgba(51, 0, 212, 1) 50%, rgba(72, 0, 110, 1) 100%);
+    background: linear-gradient(90deg, #f23224 0%, #EA5131 58%, #FF613D 80%);
     -webkit-background-clip: text;
     font-weight: 1000;
     display: inline;
@@ -989,7 +986,7 @@ section{
     left: 0;
     pointer-events: none;
     position: absolute;
-    background: linear-gradient(to bottom, var(--color-bg1), var(--color-bg2));
+    background: #1c1d25;
     z-index: -5;
 
     svg {
@@ -997,7 +994,7 @@ section{
       }
 
     .floating-elements-container{
-        filter: url(#goo) blur(120px);
+        filter: url(#goo) blur(20px);
         width: 100%;
         height: 100%;
     }
