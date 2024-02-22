@@ -32,14 +32,15 @@
 
 </head>
 
-<body class="" style="background-color: hsl(217, 91%, 99%); font-family: 'Noto Sans', sans-serif;">
+<body class="" style="background-color: #f3f3f3; font-family: 'Noto Sans', sans-serif;">
     <!-- navbar -->
     <nav class="py-5">
         <div class="navbar container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- logo -->
                 <div class="navbar-logo flex-shrink-0 flex mx-2 items-center">
-                    <span style="font-family:'Kadwa'" class="text-2xl">AHMahi<span style="color :#EA5131">.</span></span>
+                    <img src="src\img\hero-logo.png" alt="image" class="nav-logo">
+                    <!-- <span style="font-family:'Kadwa'" class="text-2xl">AHMahi<span style="color :#EA5131">.</span></span> -->
                 </div>
                 <!-- navlink -->
                 <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
@@ -88,7 +89,7 @@
             </p> -->
             <div class="mt-6 hero-buttons">
                 <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
-                    <a href="#" class="hero-button shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out">
+                    <a href="#contact" class="hero-button shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out">
                         Contact me
                     </a>
                     <a href="/resume.pdf" class="hero-cv flex items-center font-semibold" download>
@@ -129,26 +130,30 @@
                     <div class="g5"></div>
                     <div class="interactive"></div>
                 </div>
-            </div> -->
+                </div> -->
+            </div>
+            <div class="hero-bg-svg">
+                <img src="src\img\herologo.png" alt="image" class="">
+            </div>
+            <div class=".hero-floaties">
+                <img src="src\img\1.png" data-speed="-5" class="layer floaties-1">
+                <img src="src\img\2.png" data-speed="-5" class="layer floaties-2">
+                <img src="src\img\3.png" data-speed="5" class="layer floaties-3">
+                <img src="src\img\4.png" data-speed="4" class="layer floaties-4">
+                <img src="src\img\5.png" data-speed="-3" class="layer floaties-5">
+                <img src="src\img\6.png" data-speed="-5" class="layer floaties-6">
+                <img src="src\img\2.png" data-speed="5" class="layer floaties-7">
+                <img src="src\img\cross.png" data-speed="-4" class="layer floaties-8">
+                <!-- <img src="src\img\6.png" data-speed="-9" class="layer floaties-6">
+                <img src="src\img\7.png" data-speed="-9" class="layer floaties-7">
+                <img src="src\img\9.png" data-speed="-9" class="layer floaties-11">
+                <img src="src\img\10.png" data-speed="-9" class="layer floaties-9">
+                <img src="src\img\11.png" data-speed="-9" class="layer floaties-10">
+                <img src="src\img\12.png" data-speed="-9" class="layerfloaties-12"> -->
+            </div>        
         </div>
     </section>
-
-    <div class="hero-bg-svg">
-        <img src="src\img\herologo.png" alt="image" class="">
-    </div>
-
-    <!-- <div class="container-cube">
-        <div class="cube">
-            <div class="face">Creativity</div>
-            <div class="face">Logic</div>
-            <div class="face">Efficiency</div>
-            <div class="face">Organization</div>
-            <div class="face">Teamwork</div>
-            <div class="face">Communication</div>
-        </div>
-
-    </div> -->
-
+    
     <div class="pt-10"></div> 
 
     <!-- Projects -->
@@ -549,7 +554,7 @@
     </script>
     <script>
         var typed = new Typed('#typed', {
-            strings: ['Web Developer', 'UI/UX Designer'],
+            strings: ['Front-End Developer', 'UX Researcher', 'User Interface Designer'],
             typeSpeed: 80,
             backSpeed: 50,
             loop: true
@@ -755,7 +760,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    document.addEventListener("mousemove", rotateCube);
+    //floaties logic 
+    document.addEventListener("mousemove", parallax);
+    
+        function parallax(e) {
+            document.querySelectorAll('.layer').forEach(layer => {
+                const speed = parseFloat(layer.getAttribute('data-speed')); // Parse float to ensure numerical calculation
+                
+                const x = (window.innerWidth - e.pageX) * speed / 100; // Adjust the calculation
+                const y = (window.innerHeight - e.pageY) * speed / 100; // Adjust the calculation
+    
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
 </script>
 
 </body>

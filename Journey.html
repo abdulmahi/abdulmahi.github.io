@@ -75,6 +75,38 @@
         </div>
     </nav>
 
+    <div class="gradient-bg">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            </defs>
+        </svg>
+        <!-- Floating Element -->
+        <div class="floating-elements-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+        </div>
+    </div>
+
+    <div class="container-cube">
+        <div class="cube">
+            <div class="face">Creativity</div>
+            <div class="face">Logic</div>
+            <div class="face">Efficiency</div>
+            <div class="face">Organization</div>
+            <div class="face">Teamwork</div>
+            <div class="face">Communication</div>
+        </div>
+    </div>
+
     <!-- Experience -->
     <section class="experience">
         <div class="container  max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">

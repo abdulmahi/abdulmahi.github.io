@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <div class=".hero-floaties">
+        <img src="src\img\1.png" data-speed="-5" class="layer">
+        <img src="src\img\2.png" data-speed="-5" class="layer">
+        <img src="src\img\3.png" data-speed="7" class="layer">
+        <img src="src\img\4.png" data-speed="9" class="layer">
+        <img src="src\img\5.png" data-speed="-3" class="layer">
+        <img src="src\img\6.png" data-speed="-9" class="layer">
+        <img src="src\img\7.png" data-speed="-9" class="layer">
+        <img src="src\img\9.png" data-speed="-9" class="layer">
+        <img src="src\img\10.png" data-speed="-9" class="layer">
+        <img src="src\img\11.png" data-speed="-9" class="layer">
+        <img src="src\img\12.png" data-speed="-9" class="layer">
+    </div>
+    <script>
+        document.addEventListener("mousemove", parallax);
+    
+        function parallax(e) {
+            document.querySelectorAll('.layer').forEach(layer => {
+                const speed = parseFloat(layer.getAttribute('data-speed')); // Parse float to ensure numerical calculation
+                
+                const x = (window.innerWidth - e.pageX) * speed / 100; // Adjust the calculation
+                const y = (window.innerHeight - e.pageY) * speed / 100; // Adjust the calculation
+    
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
+    </script>    
+</body>
+</html>
