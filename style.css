@@ -1296,3 +1296,20 @@ section{
 .footer{
     background: #1c1d25;
 }
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+    transform: translateY(0);
+}
+
+.cover span{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}

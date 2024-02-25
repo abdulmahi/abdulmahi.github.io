@@ -34,495 +34,505 @@
 </head>
 
 <body data-barba="wrapper" class="" style="background-color: #f3f3f3; font-family: 'Noto Sans', sans-serif;">
-    <!-- navbar -->
-    <nav class="py-5">
-        <div class="navbar container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- logo -->
-                <div class="navbar-logo flex-shrink-0 flex mx-2 items-center">
-                    <img src="src\img\hero-logo.png" alt="image" class="nav-logo">
-                    <!-- <span style="font-family:'Kadwa'" class="text-2xl">AHMahi<span style="color :#EA5131">.</span></span> -->
-                </div>
-                <!-- navlink -->
-                <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
-                    <div class="ml-10 flex items-baseline space-x-9">
-                        <a href="check.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case Studies</a>
-                        <a href="about.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a> 
-                        <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Journey</a>
-                        <!-- <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Contact</a> -->
-                        <!-- <a href="#contact" class="navbar-link navbar-button m-3 px-5 rounded-sm py-3 text-lg shadow-lg font-bold transition-all duration-300 ease-in-out">Contact</a> -->
-                    </div>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="sm:hidden flex items-center">
-                    <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-700 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>                    
-                </div>                               
-            </div>
-            <div id="mobile-menu" class="hidden sm:hidden">
-                <div class="px-2 pt-2 space-y-5">
-                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Home</a>
-                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Contact</a>
-                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Projects</a>
-                    <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Resume</a>
-                    <!-- <div class="px-2">
-                        <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
-                    </div> -->
-                </div>
-            </div>
+    <div data-barba="container" data-barba-namespace="check">
+        <div class="cover">
+            <span class="green"></span><span></span><span></span><span></span><span></span>
         </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="hero text-gray-800 py-10 lg:py-10 -mt-28">
-        <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h1 style="font-family:'Kadwa'" class="hero-intro text-7xl font-black lg:leading-[94px] lg:text-[38px]">
-                Abdul Hamid Mahi
-            </h1>
-            <h1 style="font-family:'kadwa'" class="hero-title italic text-3xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
-                <span id="typed"></span>
-            </h1>
-            <!-- <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-gray-800 font-semibold">
-                Hello! I'm a UI/UX designer & Developer based in Melbourne, Australia.
-            </p> -->
-            <div class="mt-6 hero-buttons">
-                <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
-                    <a href="#contact" class="hero-button shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out">
-                        Contact me
-                    </a>
-                    <a href="/resume.pdf" class="hero-cv flex items-center font-semibold" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                        </svg>
-                        <span class=" ml-2 hover:underline">My Resume</span>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <a href="#about" class="home-scroll">
-                    <div class="home-scroll-mouse">
-                        <i class="ri-mouse-line"></i>
+        <!-- navbar -->
+        <nav class="py-5">
+            <div class="navbar container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- logo -->
+                    <div class="navbar-logo flex-shrink-0 flex mx-2 items-center">
+                        <img src="src\img\hero-logo.png" alt="image" class="nav-logo">
+                        <!-- <span style="font-family:'Kadwa'" class="text-2xl">AHMahi<span style="color :#EA5131">.</span></span> -->
                     </div>
-                    <span class="home-scroll-text">Scroll Down</span>
-                    <div class="home-scroll-box">
-                        <i class="ri-arrow-down-line"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="gradient-bg">
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-                    </defs>
-                </svg>
-            </div>
-            <div class="hero-bg-svg">
-                <img src="src\img\herologo.png" alt="image" class="">
-            </div>
-            <div class=".hero-floaties">
-                <img src="src\img\1.png" data-speed="-5" class="layer floaties-1">
-                <img src="src\img\2.png" data-speed="-5" class="layer floaties-2">
-                <img src="src\img\3.png" data-speed="5" class="layer floaties-3">
-                <img src="src\img\4.png" data-speed="4" class="layer floaties-4">
-                <img src="src\img\5.png" data-speed="-3" class="layer floaties-5">
-                <img src="src\img\6.png" data-speed="-5" class="layer floaties-6">
-                <img src="src\img\2.png" data-speed="5" class="layer floaties-7">
-                <img src="src\img\cross.png" data-speed="-4" class="layer floaties-8">
-                <img src="src\img\line.png" data-speed="5" class="layer floaties-9">
-                <img src="src\img\curvy.png" data-speed="5" class="layer floaties-10">
-            </div>        
-        </div>
-    </section>
-    
-    <div class="pt-10"></div> 
-
-    <!-- Projects -->
-    <section class="projects section py-20" id="projects">
-        <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h2 style="font-family:'Kadwa'" class="text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
-                Projects<span class="text-blue-700 text-6xl">.</span></span>
-            </h2>
-            <div style="font-family:'Rasa'" class="projects-container container grid">
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
-                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            Type-II Diabetes Self Management Solution (Patient App Upgrade). 
-                            Built with Flutter, Node.JS and MySQL
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">AI/Machine Learning</h3>
-                        <h2 class="projects-title text-4xl font-bold">Robonav</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            An AI that uses pathfinding algorithms to find shortest path. Built with Java by 
-                            employing Object Oriented Programming (OOP) concepts & splashKit UI.
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
-                        <h2 class="projects-title text-4xl font-bold">Recip-Ebook</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            Find, learn, Manage and create your own recipes. 
-                            Built with Vue JS, Tailwind, Bootstrap and Firebase.
-                            Mobile version with Kotlin, Firebase and Android Studio.
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\Hero Section.png" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
-                        <h2 class="projects-title text-4xl font-bold">BloodSync</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            A blood donating and requesting platform specifically designed for university students in Bangladesh.
-                            Built with Vite, TypeScript, NextJS, Tailwind and Designed with Adobe XD.
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
-                        <h2 class="projects-title text-4xl font-bold">ClimaMate</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            A realtime climate and weather reporting app built with Vite, React JS, 
-                            Tailwind, custom built SVG, Google Maps API & OpenWeather2.5 API.
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-
-                <article class="projects-card">
-                    <div class="project-image">
-                        <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="projects-content">
-                        <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
-                        <h2 class="projects-title text-4xl font-bold">Mirai Tablets</h2>
-                        <p class="projects-description text-xl text-gray-500">
-                            An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data storage & Management.
-                        </p>
-                    </div>
-
-                    <div class="projects-buttons">
-                        <a href="https://github.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-github-line mb-1"></i></i> View
-                        </a>
-
-                        <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
-                            <i class="ri-dribbble-line mb-1"></i> View
-                        </a>
-                    </div> 
-                </article>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Research -->
-
-    <!-- Service -->
-    <section class="services -mt-10">
-        <div class="container service-container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h2 style="font-family:'Kadwa'" class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
-                Services<span class="text-blue-700 text-6xl">.</span></span>
-            </h2>
-            <div class="service-text-container flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
-                <!-- Vertical hr with adjusted width and boldness -->
-                <hr class="service-hr w-2 h-6 border-l-8 border-blue-700 mr-4 md:mr-2">          
-                <!-- Concise two-line description -->
-                <p class="service-desc text-gray-700 font-medium"> I specialize in the provided services but upon request I can take up any IT project or special skills</p>
-            </div>                                         
-            <div class="reveal service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-                <!-- Card 1: UI/UX Design -->
-                <div style="position: relative; z-index: 1;" class="service-card-1 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">                  
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
-                    </svg>  
-                    <img width="96" height="96" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/100/external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design.png" alt="external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design"/>                    
-                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
-                    </svg>                                                                          
-                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">UI/UX Design</h2>
-                    <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Crafting seamless user experiences through intuitive design, user research, and usability testing. Focused on creating visually appealing interfaces that enhance user satisfaction and engagement.</p>
-                </div>                
-            
-                <!-- Card 2: Front-end Development -->
-                <div style="position: relative; z-index: 1" class="service-card-2 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
-                    </svg>
-                    <img width="100" height="100" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/100/external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx.png" alt="external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx"/>                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
-                    </svg>
-                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Website Dev</h2>
-                    <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Building responsive and interactive web applications with a focus on user interface and functionality. Proficient in technologies like React, Redux, Vue, and incorporating modern design principles for an optimal user experience.</p>
-                </div>
-            
-                <!-- Card 3: Mobile Development -->
-                <div style="position: relative; z-index: 1" class="service-card-3 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
-                    </svg>
-                    <img width="100" height="100" src="https://img.icons8.com/wired/100/developer-mode.png" alt="developer-mode"/>                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
-                    </svg>
-                    <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Mobile Dev</h2>
-                    <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Creating cross-platform mobile applications with a focus on performance and user experience. Proficient in technologies like Flutter and React Native, delivering seamless and engaging mobile solutions for diverse platforms.</p>
-                </div>
-            </div>                
-        </div>
-    </section>
-
-    <div class="pt-10"></div> 
-
-    <!-- Contact -->
-    <section class="contact section" id="contact">
-        <div class="contact-container grid">
-            <div class="contact-data">
-                <h2 style="font-family:'Kadwa'" class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 section-title-2">
-                    Contact Me<span class="text-blue-700 text-6xl">.</span></span>
-                </h2>
-
-                <p class="contact-description-1 font-semibold text-sm text-gray-800">
-                    You will not receive spam mails and offers. Send me
-                    any message you want and I'll get back to you.
-                </p>
-
-                <p class="contact-description text-sm text-gray-600">
-                    Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email Address</b>, 
-                    but you won't receive anything other than your reply.
-                </p>
-
-                <div class="geometric-box"></div>
-            </div> 
-            <div class="contact-mail">
-                <h2 style="font-family:'Kadwa'" class="contact-title text-3xl font-medium">
-                    Send Me A Message
-                </h2>
-
-                <form style="font-family:'Rasa'" action="" class="contact-form" id="contact-form">
-                    <div class="contact-group">
-                        <div class="contact-box">
-                            <input type="text" name="user_name" class="contact-input" id="name" required placeholder="First Name ">
-                            <label for="name" class="contact-label">First Name</label>
+                    <!-- navlink -->
+                    <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
+                        <div class="ml-10 flex items-baseline space-x-9">
+                            <a href="check.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case Studies</a>
+                            <a href="about.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a> 
+                            <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Journey</a>
+                            <!-- <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Contact</a> -->
+                            <!-- <a href="#contact" class="navbar-link navbar-button m-3 px-5 rounded-sm py-3 text-lg shadow-lg font-bold transition-all duration-300 ease-in-out">Contact</a> -->
                         </div>
-
-                        <div class="contact-box">
-                            <input type="email" name="user_email" class="contact-input" id="email" required placeholder="Email Address ">
-                            <label for="email" class="contact-label">Email Address</label>
-                        </div>
-
                     </div>
-
-                    <div class="contact-box">
-                        <input type="text" name="user_subject" class="contact-input" id="subject" required placeholder="Subject">
-                        <label for="subject" class="contact-label">Subject</label>
-                    </div>
-
-                    <div class="contact-box contact-area">
-                        <textarea name="user_message" id="message" class="contact-input" required placeholder="Message"></textarea>
-                        <label for="message" class="contact-label">Message</label>
-                    </div>                        
-
-                    <p class="contact_message" id="contact-message"></p>
-
-                    <button type="submit" class="contact-button button font-medium text-xl bg-blue-700 hover:bg-blue-800 transition-all duration-300 ease-in-out px-6 py-3">
-                        <i class="ri-send-plane-line mr-2"></i>Send Message
-                    </button>
-                </form>
-            </div>
-
-            <div class="contact-social">
-                <img src="src/img/curved-arrow.svg" alt="" class="contact-social-arrow">
-                
-                <div class="contact-social-data">
-                    <div>
-                        <p class="contact-social-description-1">
-                            Does not send emails
-                        </p>
-
-                        <p class="contact-social-description-2">
-                             My social networks
-                        </p>
-                    </div>
-                    <div class="contact-social-links">
-                        <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
-                            <i class="ri-facebook-circle-line"></i>
-                        </a>
-                        <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-
+                    <!-- Mobile Menu Button -->
+                    <div class="sm:hidden flex items-center">
+                        <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-700 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>                    
+                    </div>                               
+                </div>
+                <div id="mobile-menu" class="hidden sm:hidden">
+                    <div class="px-2 pt-2 space-y-5">
+                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Home</a>
+                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Contact</a>
+                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Projects</a>
+                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Resume</a>
+                        <!-- <div class="px-2">
+                            <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
+                        </div> -->
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <div class="pt-20"></div> 
-
-    <!-- Footer -->
-    <footer class="footer pt-10 pb-8">
-        <div style="font-family:'Rasa'" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex justify-between items-start mb-10">
-                <span style="font-family:'Kadwa'; color: #fcfcfdea" class="text-[26px] font-bold text-2xl">AHMahi<span class="text-blue-700">.</span></span>
-                <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
-                    <div style="color: #fcfcfdea" class="info">
-                        <h6 class="text-2xl font-semibold mb-6">Information</h6>
-                        <ul class="text-gray-400 font-light space-y-1">
-                            <li>
-                                <a href="#about" class="footer-link">Abdul Hamid Mahi</a>
-                            </li>
-                            <li>
-                                <a href="Services" class="footer-link">abdulhamidmahi2000@gmail.com</a>
-                            </li>
-                            <li>
-                                <a href="projects" class="footer-link">Melbourne, Victoria, Australia</a>
-                            </li>
-                        </ul>
+        <!-- Hero -->
+        <section class="hero text-gray-800 py-10 lg:py-10 -mt-28">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+                <h1 style="font-family:'Kadwa'" class="hero-intro text-7xl font-black lg:leading-[94px] lg:text-[38px]">
+                    Abdul Hamid Mahi
+                </h1>
+                <h1 style="font-family:'kadwa'" class="hero-title italic text-3xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
+                    <span id="typed"></span>
+                </h1>
+                <!-- <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-gray-800 font-semibold">
+                    Hello! I'm a UI/UX designer & Developer based in Melbourne, Australia.
+                </p> -->
+                <div class="mt-6 hero-buttons">
+                    <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
+                        <a href="#contact" class="hero-button shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out">
+                            Contact me
+                        </a>
+                        <a href="/resume.pdf" class="hero-cv flex items-center font-semibold" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            <span class=" ml-2 hover:underline">My Resume</span>
+                        </a>
                     </div>
-                    
-                    <div style="color: #fcfcfdea" class="social">
-                        <h6 class="text-2xl font-semibold mb-6">Social Media</h6>
-                        <ul class="text-gray-400 font-light space-y-1">
-                            <li>
-                                <a href="#about" class="footer-link">Dribble</a>
-                            </li>
-                            <li>
-                                <a href="Services" class="footer-link">Linkedin</a>
-                            </li>
-                            <li>
-                                <a href="projects" class="footer-link">Github</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>                      
+                </div>
+                <div>
+                    <a href="#about" class="home-scroll">
+                        <div class="home-scroll-mouse">
+                            <i class="ri-mouse-line"></i>
+                        </div>
+                        <span class="home-scroll-text">Scroll Down</span>
+                        <div class="home-scroll-box">
+                            <i class="ri-arrow-down-line"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="gradient-bg">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="hero-bg-svg">
+                    <img src="src\img\herologo.png" alt="image" class="">
+                </div>
+                <div class=".hero-floaties">
+                    <img src="src\img\1.png" data-speed="-5" class="layer floaties-1">
+                    <img src="src\img\2.png" data-speed="-5" class="layer floaties-2">
+                    <img src="src\img\3.png" data-speed="5" class="layer floaties-3">
+                    <img src="src\img\4.png" data-speed="4" class="layer floaties-4">
+                    <img src="src\img\5.png" data-speed="-3" class="layer floaties-5">
+                    <img src="src\img\6.png" data-speed="-5" class="layer floaties-6">
+                    <img src="src\img\2.png" data-speed="5" class="layer floaties-7">
+                    <img src="src\img\cross.png" data-speed="-4" class="layer floaties-8">
+                    <img src="src\img\line.png" data-speed="5" class="layer floaties-9">
+                    <img src="src\img\curvy.png" data-speed="5" class="layer floaties-10">
+                </div>        
             </div>
-            <div class="border-style"></div>
-            <div class="flex mt-5 justify-between items-start text-gray-400">
-                <small>Design & Developed by <span class="text-blue-700">AHMahi</span></small>
-                <small>Copyright &copy; 2024</small>
-            </div>
-        </div>
+        </section>
         
-    </footer>
+        <div class="pt-10"></div> 
+
+        <!-- Projects -->
+        <section class="projects section py-20" id="projects">
+            <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+                <h2 style="font-family:'Kadwa'" class="text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                    Projects<span class="text-blue-700 text-6xl">.</span></span>
+                </h2>
+                <div style="font-family:'Rasa'" class="projects-container container grid">
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                            <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                Type-II Diabetes Self Management Solution (Patient App Upgrade). 
+                                Built with Flutter, Node.JS and MySQL
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">AI/Machine Learning</h3>
+                            <h2 class="projects-title text-4xl font-bold">Robonav</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                An AI that uses pathfinding algorithms to find shortest path. Built with Java by 
+                                employing Object Oriented Programming (OOP) concepts & splashKit UI.
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
+                            <h2 class="projects-title text-4xl font-bold">Recip-Ebook</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                Find, learn, Manage and create your own recipes. 
+                                Built with Vue JS, Tailwind, Bootstrap and Firebase.
+                                Mobile version with Kotlin, Firebase and Android Studio.
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\Hero Section.png" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
+                            <h2 class="projects-title text-4xl font-bold">BloodSync</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                A blood donating and requesting platform specifically designed for university students in Bangladesh.
+                                Built with Vite, TypeScript, NextJS, Tailwind and Designed with Adobe XD.
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
+                            <h2 class="projects-title text-4xl font-bold">ClimaMate</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                A realtime climate and weather reporting app built with Vite, React JS, 
+                                Tailwind, custom built SVG, Google Maps API & OpenWeather2.5 API.
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+
+                    <article class="projects-card">
+                        <div class="project-image">
+                            <img src="src\img\placeholder.jpg" alt="image" class="projects-img">
+                            <a href="#" class="projects-button button">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="projects-content">
+                            <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
+                            <h2 class="projects-title text-4xl font-bold">Mirai Tablets</h2>
+                            <p class="projects-description text-xl text-gray-500">
+                                An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data storage & Management.
+                            </p>
+                        </div>
+
+                        <div class="projects-buttons">
+                            <a href="https://github.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-github-line mb-1"></i></i> View
+                            </a>
+
+                            <a href="https://dribble.com/" target="_blank" class="projects-link text-xl">
+                                <i class="ri-dribbble-line mb-1"></i> View
+                            </a>
+                        </div> 
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Research -->
+
+        <!-- Service -->
+        <section class="services -mt-10">
+            <div class="container service-container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+                <h2 style="font-family:'Kadwa'" class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                    Services<span class="text-blue-700 text-6xl">.</span></span>
+                </h2>
+                <div class="service-text-container flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
+                    <!-- Vertical hr with adjusted width and boldness -->
+                    <hr class="service-hr w-2 h-6 border-l-8 border-blue-700 mr-4 md:mr-2">          
+                    <!-- Concise two-line description -->
+                    <p class="service-desc text-gray-700 font-medium"> I specialize in the provided services but upon request I can take up any IT project or special skills</p>
+                </div>                                         
+                <div class="reveal service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+                    <!-- Card 1: UI/UX Design -->
+                    <div style="position: relative; z-index: 1;" class="service-card-1 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">                  
+                        <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
+                        </svg>  
+                        <img width="96" height="96" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/100/external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design.png" alt="external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design"/>                    
+                        <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
+                            <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
+                        </svg>                                                                          
+                        <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">UI/UX Design</h2>
+                        <!-- Paragraph -->
+                        <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Crafting seamless user experiences through intuitive design, user research, and usability testing. Focused on creating visually appealing interfaces that enhance user satisfaction and engagement.</p>
+                    </div>                
+                
+                    <!-- Card 2: Front-end Development -->
+                    <div style="position: relative; z-index: 1" class="service-card-2 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
+                        <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
+                        </svg>
+                        <img width="100" height="100" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/100/external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx.png" alt="external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx"/>                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
+                            <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
+                        </svg>
+                        <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Website Dev</h2>
+                        <!-- Paragraph -->
+                        <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Building responsive and interactive web applications with a focus on user interface and functionality. Proficient in technologies like React, Redux, Vue, and incorporating modern design principles for an optimal user experience.</p>
+                    </div>
+                
+                    <!-- Card 3: Mobile Development -->
+                    <div style="position: relative; z-index: 1" class="service-card-3 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
+                        <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
+                        </svg>
+                        <img width="100" height="100" src="https://img.icons8.com/wired/100/developer-mode.png" alt="developer-mode"/>                    <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
+                            <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
+                        </svg>
+                        <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Mobile Dev</h2>
+                        <!-- Paragraph -->
+                        <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Creating cross-platform mobile applications with a focus on performance and user experience. Proficient in technologies like Flutter and React Native, delivering seamless and engaging mobile solutions for diverse platforms.</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <div class="pt-10"></div> 
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="contact-container grid">
+                <div class="contact-data">
+                    <h2 style="font-family:'Kadwa'" class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 section-title-2">
+                        Contact Me<span class="text-blue-700 text-6xl">.</span></span>
+                    </h2>
+
+                    <p class="contact-description-1 font-semibold text-sm text-gray-800">
+                        You will not receive spam mails and offers. Send me
+                        any message you want and I'll get back to you.
+                    </p>
+
+                    <p class="contact-description text-sm text-gray-600">
+                        Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email Address</b>, 
+                        but you won't receive anything other than your reply.
+                    </p>
+
+                    <div class="geometric-box"></div>
+                </div> 
+                <div class="contact-mail">
+                    <h2 style="font-family:'Kadwa'" class="contact-title text-3xl font-medium">
+                        Send Me A Message
+                    </h2>
+
+                    <form style="font-family:'Rasa'" action="" class="contact-form" id="contact-form">
+                        <div class="contact-group">
+                            <div class="contact-box">
+                                <input type="text" name="user_name" class="contact-input" id="name" required placeholder="First Name ">
+                                <label for="name" class="contact-label">First Name</label>
+                            </div>
+
+                            <div class="contact-box">
+                                <input type="email" name="user_email" class="contact-input" id="email" required placeholder="Email Address ">
+                                <label for="email" class="contact-label">Email Address</label>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-box">
+                            <input type="text" name="user_subject" class="contact-input" id="subject" required placeholder="Subject">
+                            <label for="subject" class="contact-label">Subject</label>
+                        </div>
+
+                        <div class="contact-box contact-area">
+                            <textarea name="user_message" id="message" class="contact-input" required placeholder="Message"></textarea>
+                            <label for="message" class="contact-label">Message</label>
+                        </div>                        
+
+                        <p class="contact_message" id="contact-message"></p>
+
+                        <button type="submit" class="contact-button button font-medium text-xl bg-blue-700 hover:bg-blue-800 transition-all duration-300 ease-in-out px-6 py-3">
+                            <i class="ri-send-plane-line mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-social">
+                    <img src="src/img/curved-arrow.svg" alt="" class="contact-social-arrow">
+                    
+                    <div class="contact-social-data">
+                        <div>
+                            <p class="contact-social-description-1">
+                                Does not send emails
+                            </p>
+
+                            <p class="contact-social-description-2">
+                                My social networks
+                            </p>
+                        </div>
+                        <div class="contact-social-links">
+                            <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+                            <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="pt-20"></div> 
+
+        <!-- Footer -->
+        <footer class="footer pt-10 pb-8">
+            <div style="font-family:'Rasa'" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="md:flex justify-between items-start mb-10">
+                    <span style="font-family:'Kadwa'; color: #fcfcfdea" class="text-[26px] font-bold text-2xl">AHMahi<span class="text-blue-700">.</span></span>
+                    <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+                        <div style="color: #fcfcfdea" class="info">
+                            <h6 class="text-2xl font-semibold mb-6">Information</h6>
+                            <ul class="text-gray-400 font-light space-y-1">
+                                <li>
+                                    <a href="#about" class="footer-link">Abdul Hamid Mahi</a>
+                                </li>
+                                <li>
+                                    <a href="Services" class="footer-link">abdulhamidmahi2000@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="projects" class="footer-link">Melbourne, Victoria, Australia</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="color: #fcfcfdea" class="social">
+                            <h6 class="text-2xl font-semibold mb-6">Social Media</h6>
+                            <ul class="text-gray-400 font-light space-y-1">
+                                <li>
+                                    <a href="#about" class="footer-link">Dribble</a>
+                                </li>
+                                <li>
+                                    <a href="Services" class="footer-link">Linkedin</a>
+                                </li>
+                                <li>
+                                    <a href="projects" class="footer-link">Github</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="border-style"></div>
+                <div class="flex mt-5 justify-between items-start text-gray-400">
+                    <small>Design & Developed by <span class="text-blue-700">AHMahi</span></small>
+                    <small>Copyright &copy; 2024</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+        
+    
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Typed JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="main.js"></script>
     <script>
         $(document).ready(function () {
@@ -761,7 +771,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 </script>
-
 
 </body>
 </html>

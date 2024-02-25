@@ -41,12 +41,12 @@
                         let tl = gsap.timeline();
                         tl.to(".cover span", {
                             y : "-100%",
-                            stagger: 0.3
+                            stagger: 0.1
                         });
                         tl.to(".cover", {
                             y: "-100%",
                             opacity: 0
-                        })
+                        });
 
                         return tl;
                     },
@@ -54,35 +54,34 @@
                         let tl = gsap.timeline();
                         tl.to(".cover span", {
                             y : "0%",
-                            stagger: 0.3
+                            stagger: 0.1
                         });
                         tl.to(".cover", {
                             y: "0%",
                             opacity: 0
-                        })
+                        });
                         return tl;
                     },
                     enter({current, next, trigger}){
                         let tl = gsap.timeline();
                         tl.to(".cover span", {
                             y : "-100%",
-                            stagger: 0.3
+                            stagger: 0.1
                         });
                         tl.to(".cover", {
                             y: "-100%",
                             opacity: 0
-                        })
+                        });
                         return tl;
                     },
                     beforeEnter({current, next, trigger}){
                         gsap.set(current.container, {
-                            display""
-                        })
+                            display: "block"
+                        });
                     }
-
                 }
             ]
-        })
+        });
     </script>
     <script>
         document.addEventListener("mousemove", parallax);
