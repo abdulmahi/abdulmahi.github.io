@@ -1313,3 +1313,11 @@ section{
     height: 100%;
     background-color: brown;
 }
+
+.section-heading{
+    left: 50%;
+}
+
+.ri-arrow-right-up-line{
+    display: flex;
+}
