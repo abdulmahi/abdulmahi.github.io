@@ -399,6 +399,12 @@ section{
     padding: 1rem;
 }
 
+.projects-img {
+    width: 700px;
+    height: 270px; 
+    object-fit: cover; 
+}
+
 .projects-link{
     display: flex;
     align-items: center;
