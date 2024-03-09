@@ -50,16 +50,16 @@
                     <!-- navlink -->
                     <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
                         <div class="ml-10 flex items-baseline space-x-9">
-                            <a href="check.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case Studies</a>
-                            <a href="about.html" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a> 
-                            <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Journey</a>
+                            <a href="#projects" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case Studies</a>
+                            <a href="#projects" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a> 
+                            <a href="#services" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Services</a>
                             <!-- <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Contact</a> -->
                             <!-- <a href="#contact" class="navbar-link navbar-button m-3 px-5 rounded-sm py-3 text-lg shadow-lg font-bold transition-all duration-300 ease-in-out">Contact</a> -->
                         </div>
                     </div>
                     <!-- Mobile Menu Button -->
                     <div class="sm:hidden flex items-center">
-                        <button id="mobile-menu-btn" type="button" class="text-gray-800 hover:to-blue-700 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
+                        <button id="mobile-menu-btn" type="button" class="text-gray-100 hover:to-blue-700 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
@@ -68,10 +68,10 @@
                 </div>
                 <div id="mobile-menu" class="hidden sm:hidden">
                     <div class="px-2 pt-2 space-y-5">
-                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Home</a>
-                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Contact</a>
-                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Projects</a>
-                        <a href="#" class="text-gray-800 block px-3 py-2 font-semibold underline-effect">Resume</a>
+                        <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Home</a>
+                        <a href="#contact" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Contact</a>
+                        <a href="#projects" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Projects</a>
+                        <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Resume</a>
                         <!-- <div class="px-2">
                             <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
                         </div> -->
@@ -186,7 +186,7 @@
                 <article class="projects-card">
                     <div class="project-image">
                         <img src="src\img\pathfinding.png" alt="image" class="projects-img">
-                        <a href="#" class="projects-button button">
+                        <a href="https://github.com/AHMahi/Path-Finding-Algorithm" class="projects-button button">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -330,7 +330,7 @@
     <!-- Research -->
 
     <!-- Service -->
-    <section class="services -mt-10">
+    <section class="services -mt-10" id="services">
         <div class="container service-container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
             <h2 style="font-family:'Kadwa'" class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                 Services<span class="text-blue-700 text-6xl">.</span></span>
@@ -552,7 +552,7 @@
     </script>
     <script>
         var typed = new Typed('#typed', {
-            strings: ['Front-End Developer', 'UX Researcher', 'UI Designer'],
+            strings: ['Front-End Developer', 'Data Analyst', 'UI/UX Designer'],
             typeSpeed: 80,
             backSpeed: 50,
             loop: true

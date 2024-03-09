@@ -35,8 +35,8 @@ function section2() {
 
     t2.from(".services, service-text-container, .service-container, .service-heading, .service-desc, .service-hr", {
         opacity: 0,
-        y: -80,
-        stagger: 0.2,
+        y: -50,
+        stagger: 0.1,
     });
 }
 

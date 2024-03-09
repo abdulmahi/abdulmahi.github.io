@@ -51,20 +51,11 @@ a.underline-effect:hover::after {
     width: 22px;
 }
 
-.navbar-button, .hero-button {
+.hero-button {
     background-color: #f23224;
     background-image: linear-gradient(45deg, #f23224 40%, #EA5131 88%, #FF613D 99%);
-    font-weight: 900; /* Adjusted to the maximum commonly supported value */
-    color: #f3f4f6; /* Ensures text color is visible */
-}
-
-
-.navbar-button:hover, .hero-button:hover {
-    background-color: #6d28d9;
-}
-
-.about-me{
-    
+    font-weight: 900; 
+    color: #f3f4f6; 
 }
 
 /* Floating Navbar Styles */
@@ -385,6 +376,8 @@ section{
 
 .projects-card{
     padding: 1.5rem 1.5rem 2rem;
+    transition: background-color .4s;
+    background-color: #f3f3f3;
 }
 
 .project-image{
@@ -392,17 +385,31 @@ section{
     margin-bottom: .75rem;
 }
 
+.ri-arrow-right-up-line{
+    color: #f3f4f6;
+    font-size:20px;
+}
+
+.projects-img {
+    position: relative;
+    width: 700px;
+    height: 270px; 
+    object-fit: cover;
+    margin-bottom: .75rem; 
+}
+
 .projects-button{
     position: absolute;
     right: 1rem;
     bottom: -1.5rem;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
+    background: #111827;
 }
 
-.projects-img {
-    width: 700px;
-    height: 270px; 
-    object-fit: cover; 
+.projects-button:hover{
+    background: #2563eb;
+    color: var(--white-color);
+    transition: ease-out 300ms;
 }
 
 .projects-link{
@@ -460,7 +467,7 @@ section{
 }
 
 .projects-card:hover{
-    background-color: var(--white-color);
+    background-color: #fbfbfb;
 }
 
 .hero-intro, .hero-title, .hero-desc{
@@ -655,7 +662,7 @@ section{
         margin-bottom: 2rem;
     }
 
-    .project-button{
+    .projects-button{
         right: 1.25rem;
     }
 
@@ -1324,6 +1331,3 @@ section{
     left: 50%;
 }
 
-.ri-arrow-right-up-line{
-    display: flex;
-}
