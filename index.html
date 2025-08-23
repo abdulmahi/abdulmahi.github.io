@@ -14,10 +14,16 @@
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
     <!-- Owl carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styling links -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/heroicons@1.0.1/dist/material.css" rel="stylesheet">
@@ -50,43 +56,60 @@
                     <!-- navlink -->
                     <div style="font-family:'Rasa'" class="navbar-links hidden sm:block ml-auto">
                         <div class="ml-10 flex items-baseline space-x-9">
-                            <a href="#projects" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case Studies</a>
-                            <a href="#projects" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a> 
-                            <a href="#services" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Services</a>
+                            <a href="#projects" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Case
+                                Studies</a>
+                            <a href="#projects"
+                                class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Projects</a>
+                            <a href="#services"
+                                class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Services</a>
                             <!-- <a href="#" class="navbar-link px-3 py-2 text-xl font-bold underline-effect">Contact</a> -->
                             <!-- <a href="#contact" class="navbar-link navbar-button m-3 px-5 rounded-sm py-3 text-lg shadow-lg font-bold transition-all duration-300 ease-in-out">Contact</a> -->
                         </div>
                     </div>
                     <!-- Mobile Menu Button -->
                     <div class="sm:hidden flex items-center">
-                        <button id="mobile-menu-btn" type="button" class="text-gray-100 hover:to-blue-700 focus:outline-none focus:text-light-gray" aria-label="Toggle menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <button id="mobile-menu-btn" type="button"
+                            class="text-gray-100 hover:to-blue-700 focus:outline-none focus:text-light-gray"
+                            aria-label="Toggle menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
-                        </button>                    
-                    </div>                               
-                </div>
-                <div id="mobile-menu" class="hidden sm:hidden">
-                    <div class="px-2 pt-2 space-y-5">
-                        <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Home</a>
-                        <a href="#contact" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Contact</a>
-                        <a href="#projects" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Projects</a>
-                        <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Resume</a>
-                        <!-- <div class="px-2">
-                            <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
-                        </div> -->
+                        </button>
                     </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden">
+                <button id="mobile-menu-close" aria-label="Close menu"
+                    class="mt-6 p-3 flex w-full justify-end text-gray-200 hover:text-white focus:outline-none">
+                    <!-- X icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+                    </svg>
+                </button>
+                <div class="px-4 pt-8 space-y-5">
+                    <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Home</a>
+                    <a href="#contact" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Contact</a>
+                    <a href="#projects"
+                        class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Projects</a>
+                    <a href="#" class="text-gray-100 block px-3 py-2 font-semibold underline-effect">Resume</a>
+                    <!-- <div class="px-2">
+                        <a href="#" class="text-gray-800 border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact</a>
+                    </div> -->
                 </div>
             </div>
         </nav>
 
         <!-- Hero -->
-        <section class="hero text-gray-800 py-10 lg:py-10 -mt-28">
-            <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+        <section class="lg:py-10 -mt-28">
+            <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
                 <h1 style="font-family:'Kadwa'" class="hero-intro text-7xl font-black lg:leading-[94px] lg:text-[38px]">
                     Abdul Hamid Mahi
                 </h1>
-                <h1 style="font-family:'kadwa'" class="hero-title italic text-3xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
+                <h1 style="font-family:'kadwa'"
+                    class="hero-title italic text-3xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
                     <span id="typed"></span>
                 </h1>
                 <!-- <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-gray-800 font-semibold">
@@ -94,12 +117,16 @@
                 </p> -->
                 <div class="mt-6 hero-buttons">
                     <div style="font-family:'Rasa'" class="mt-12 flex items-center gap-3 space-x-3 text-2xl">
-                        <a href="#contact" class="hero-button shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out">
-                            Contact me
+                        <a href="#contact"
+                            class="hero-button cta-btn shadow-lg font-bold py-3 px-7 rounded-none transition-all duration-300 ease-in-out relative inline-flex items-center overflow-visible">
+                            <span>Contact me</span>
                         </a>
+
                         <a href="/resume.pdf" class="hero-cv flex items-center font-semibold" download>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                             </svg>
                             <span class=" ml-2 hover:underline">My Resume</span>
                         </a>
@@ -119,18 +146,19 @@
                 <div class="gradient-bg">
                     <svg class="svg" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-                            <feBlend in="SourceGraphic" in2="goo" />
-                        </filter>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                                <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
                         </defs>
                     </svg>
                 </div>
                 <div class="hero-bg-svg">
                     <img src="src\img\herologo.png" alt="image" class="">
                 </div>
-                <div class=".hero-floaties">
+                <div>
                     <img src="src\img\1.png" data-speed="-5" class="layer floaties-1">
                     <img src="src\img\2.png" data-speed="-5" class="layer floaties-2">
                     <img src="src\img\3.png" data-speed="5" class="layer floaties-3">
@@ -141,20 +169,38 @@
                     <img src="src\img\cross.png" data-speed="-4" class="layer floaties-8">
                     <img src="src\img\line.png" data-speed="5" class="layer floaties-9">
                     <img src="src\img\curvy.png" data-speed="5" class="layer floaties-10">
-                </div>        
+                </div>
             </div>
         </section>
     </div>
-        
-    <div class="pt-10"></div> 
+
+    <div class="pt-10"></div>
 
     <!-- Projects -->
-    <section class="projects section py-20" id="projects">
+    <section class="projects section py-20 justify-start" id="projects">
         <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h2 style="font-family:'Kadwa'" class="section-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+            <h2 style="font-family:'Kadwa'"
+                class="section-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                 Projects<span class="text-blue-700 text-6xl">.</span></span>
             </h2>
-            <div style="font-family:'Rasa'" class="projects-container container grid">
+            <div class="flex gap-4 mt-8 tabs flex-wrap" role="tablist">
+                <button role="tab" id="t-data" aria-controls="p-data" class="filter is-active">Data</button>
+                <button role="tab" id="t-design" aria-controls="p-design" class="filter">Design</button>
+                <button role="tab" id="t-development" aria-controls="p-development" class="filter">Development</button>
+            </div>
+
+            <div style="font-family:'Rasa'" class="projects-container grid" id="p-data" role="tabpanel"
+                aria-labelledby="t-data">
+
+            </div>
+
+            <div style="font-family:'Rasa'" class="projects-container grid" id="p-design" role="tabpanel"
+                aria-labelledby="t-design">
+
+            </div>
+
+            <div style="font-family:'Rasa'" class="projects-container grid" id="p-development" role="tabpanel"
+                aria-labelledby="t-development">
                 <article class="projects-card">
                     <div class="project-image">
                         <img src="src\img\MENTORd.png" alt="image" class="projects-img">
@@ -162,12 +208,12 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
                         <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            Type-II Diabetes Self Management Solution (Patient App Upgrade). 
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
                             Built with Flutter, Node.JS and MySQL
                         </p>
                     </div>
@@ -177,10 +223,11 @@
                             <i class="ri-github-line mb-1"></i></i> View
                         </a>
 
-                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share" target="_blank" class="projects-link text-xl">
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
 
                 <article class="projects-card">
@@ -190,25 +237,26 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">AI/Machine Learning</h3>
                         <h2 class="projects-title text-4xl font-bold">Robonav</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            An AI that uses pathfinding algorithms to find shortest path. Built with Java by 
+                            An AI that uses pathfinding algorithms to find shortest path. Built with Java by
                             employing Object Oriented Programming (OOP) concepts & splashKit UI.
                         </p>
                     </div>
 
                     <div class="projects-buttons">
-                        <a href="https://github.com/AHMahi/Path-Finding-Algorithm" target="_blank" class="projects-link text-xl">
+                        <a href="https://github.com/AHMahi/Path-Finding-Algorithm" target="_blank"
+                            class="projects-link text-xl">
                             <i class="ri-github-line mb-1"></i></i> View
                         </a>
 
                         <a href="https://dribbble.com/AHMahi" target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
 
                 <article class="projects-card">
@@ -218,12 +266,12 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">RecipEbook</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            Find, learn, Manage and create your own recipes. 
+                            Find, learn, Manage and create your own recipes.
                             Built with Vue JS, Tailwind, Bootstrap and Firebase.
                             Mobile version with Kotlin, Firebase and Android Studio.
                         </p>
@@ -237,7 +285,7 @@
                         <a href="https://dribbble.com/AHMahi" target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
 
                 <article class="projects-card">
@@ -247,25 +295,28 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">BloodSync</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            A blood donating and requesting platform specifically designed for university students in Bangladesh.
+                            A blood donating and requesting platform specifically designed for university students in
+                            Bangladesh.
                             Built with Vite, TypeScript, NextJS, Tailwind and Designed with Adobe XD.
                         </p>
                     </div>
 
                     <div class="projects-buttons">
-                        <a href="https://github.com/Raad05/blood-donation" target="_blank" class="projects-link text-xl">
+                        <a href="https://github.com/Raad05/blood-donation" target="_blank"
+                            class="projects-link text-xl">
                             <i class="ri-github-line mb-1"></i></i> View
                         </a>
 
-                        <a href="https://dribbble.com/shots/23719644-BloodSync-A-Simple-Way-to-Donate-Life?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=BloodSync%3A%20A%20Simple%20Way%20to%20Donate%20Life&utm_medium=Social_Share" target="_blank" class="projects-link text-xl">
+                        <a href="https://dribbble.com/shots/23719644-BloodSync-A-Simple-Way-to-Donate-Life?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=BloodSync%3A%20A%20Simple%20Way%20to%20Donate%20Life&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
 
                 <article class="projects-card">
@@ -275,12 +326,12 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">ClimaMate</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            A realtime climate and weather reporting app built with Vite, React JS, 
+                            A realtime climate and weather reporting app built with Vite, React JS,
                             Tailwind, custom built SVG, Google Maps API & OpenWeather2.5 API.
                         </p>
                     </div>
@@ -290,10 +341,11 @@
                             <i class="ri-github-line mb-1"></i></i> View
                         </a>
 
-                        <a href="https://dribbble.com/shots/23721846-ClimaMate-Hope-Action-Against-Climate-Change?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=ClimaMate%20-%20Hope%20%26%20Action%20Against%20Climate%20Change&utm_medium=Social_Share" target="_blank" class="projects-link text-xl">
+                        <a href="https://dribbble.com/shots/23721846-ClimaMate-Hope-Action-Against-Climate-Change?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=ClimaMate%20-%20Hope%20%26%20Action%20Against%20Climate%20Change&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
 
                 <article class="projects-card">
@@ -303,12 +355,13 @@
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
-                    
+
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">Mirai Tablets</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data storage & Management.
+                            An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data storage
+                            & Management.
                         </p>
                     </div>
 
@@ -320,7 +373,7 @@
                         <a href="https://dribbble.com/AHMahi" target="_blank" class="projects-link text-xl">
                             <i class="ri-dribbble-line mb-1"></i> View
                         </a>
-                    </div> 
+                    </div>
                 </article>
             </div>
 
@@ -332,67 +385,90 @@
     <!-- Service -->
     <section class="services -mt-10" id="services">
         <div class="container service-container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-            <h2 style="font-family:'Kadwa'" class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+            <h2 style="font-family:'Kadwa'"
+                class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                 Services<span class="text-blue-700 text-6xl">.</span></span>
             </h2>
             <div class="service-text-container flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
                 <!-- Vertical hr with adjusted width and boldness -->
-                <hr class="service-hr w-2 h-6 border-l-8 border-blue-700 mr-4 md:mr-2">          
+                <hr class="service-hr w-2 h-6 border-l-8 border-blue-700 mr-4 md:mr-2">
                 <!-- Concise two-line description -->
-                <p class="service-desc text-gray-700 font-medium"> I specialize in the provided services but upon request I can take up any IT project or special skills</p>
-            </div>                                         
+                <p class="service-desc text-gray-700 font-medium"> I specialize in the provided services but upon
+                    request I can take up any IT project or special skills</p>
+            </div>
             <div class="reveal service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-                
+
                 <!-- Card 1: BI Engineering -->
-                <div style="position: relative; z-index: 1" class="service-card-3 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
+                <div style="position: relative; z-index: 1"
+                    class="service-card-3 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
+                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="9" fill="rgb(18, 113, 255)" />
                     </svg>
-                    <img width="100" height="100" src="https://img.icons8.com/?size=100&id=pK6vRmFN1QLR&format=png&color=000000" alt="developer-mode"/>
+                    <img width="100" height="100"
+                        src="https://img.icons8.com/?size=100&id=pK6vRmFN1QLR&format=png&color=000000"
+                        alt="developer-mode" />
                     <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
+                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)" />
                     </svg>
                     <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">BI Engineering</h2>
                     <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Engineers robust data architectures and ETL workflows to empower analytics and reporting. Skilled in data modelling, and infrastrcuture management, delivering dashboards and data pipelines that drive business insights and data quality.</p>
+                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Engineers robust data architectures and ETL
+                        workflows to empower analytics and reporting. Skilled in data modelling, and infrastructure
+                        management, delivering dashboards and data pipelines that drive business insights and data
+                        quality.</p>
                 </div>
                 <!-- Card 2: Data Analysis -->
-                <div style="position: relative; z-index: 1" class="service-card-2 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
+                <div style="position: relative; z-index: 1"
+                    class="service-card-2 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
+                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="9" fill="rgb(18, 113, 255)" />
                     </svg>
-                    <img width="100" height="100" src="https://img.icons8.com/?size=100&id=i5ElPxuepVd4&format=png&color=000000" alt="external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx"/>
+                    <img width="100" height="100"
+                        src="https://img.icons8.com/?size=100&id=i5ElPxuepVd4&format=png&color=000000"
+                        alt="external-coding-ui-and-ux-xnimrodx-lineal-xnimrodx" />
                     <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
+                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)" />
                     </svg>
                     <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">Data Analysis</h2>
                     <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Turning complex data into clear, actionable insights that drive meaningful business decisions. Specializing in identifying trends, uncovering root causes, and delivering strategic recommendations through compelling narrative and dashboard storytelling.</p>
+                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Turning complex data into clear, actionable
+                        insights that drive meaningful business decisions. Specializing in identifying trends,
+                        uncovering root causes, and delivering strategic recommendations through compelling narrative
+                        and dashboard storytelling.</p>
                 </div>
                 <!-- Card 3: UI/UX Design -->
-                <div style="position: relative; z-index: 1;" class="service-card-1 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">                  
-                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="9" fill="rgb(18, 113, 255)"/>
-                    </svg>  
-                    <img width="96" height="96" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/100/external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design.png" alt="external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design"/>                    
+                <div style="position: relative; z-index: 1;"
+                    class="service-card-1 bg-gray-100 card-service bg-light-dark shadow-lg rounded-sm px-6 py-16">
+                    <svg width="100%" height="9" style="position: absolute; bottom: 0; left: 0;" viewBox="0 0 360 6"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="9" fill="rgb(18, 113, 255)" />
+                    </svg>
+                    <img width="96" height="96"
+                        src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/100/external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design.png"
+                        alt="external-web-design-seo-and-marketing-kmg-design-detailed-outline-kmg-design" />
                     <svg width="80" height="80" style="position: absolute; top: 100px; left: 60px; z-index: -1;">
-                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)"/>
-                    </svg>                                                                          
+                        <circle cx="40" cy="40" r="40" fill="rgb(18, 113, 255)" />
+                    </svg>
                     <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">UI/UX Design</h2>
                     <!-- Paragraph -->
-                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Crafting seamless user experiences through intuitive design, user research, and usability testing. Focused on creating visually appealing interfaces that enhance user satisfaction and engagement.</p>
-                </div>                
-            </div>                
+                    <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Crafting seamless user experiences through
+                        intuitive design, user research, and usability testing. Focused on creating visually appealing
+                        interfaces that enhance user satisfaction and engagement.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="pt-10"></div> 
+    <div class="pt-10"></div>
 
     <!-- Contact -->
-    <section class="contact section" id="contact">
+    <section class="contact section overflow-hidden" id="contact">
         <div class="contact-container grid">
             <div class="contact-data">
-                <h2 style="font-family:'Kadwa'" class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 section-title-2">
+                <h2 style="font-family:'Kadwa'"
+                    class="text-gray-800 text-5xl lg:text-5xl font-bold mb-2 section-title-2">
                     Contact Me<span class="text-blue-700 text-6xl">.</span></span>
                 </h2>
 
@@ -402,12 +478,12 @@
                 </p>
 
                 <p class="contact-description text-sm text-gray-600">
-                    Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email Address</b>, 
+                    Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email Address</b>,
                     but you won't receive anything other than your reply.
                 </p>
 
                 <div class="geometric-box"></div>
-            </div> 
+            </div>
             <div class="contact-mail">
                 <h2 style="font-family:'Kadwa'" class="contact-title text-3xl font-medium">
                     Send Me A Message
@@ -416,30 +492,35 @@
                 <form style="font-family:'Rasa'" action="" class="contact-form" id="contact-form">
                     <div class="contact-group">
                         <div class="contact-box">
-                            <input type="text" name="user_name" class="contact-input" id="name" required placeholder="First Name ">
+                            <input type="text" name="user_name" class="contact-input" id="name" required
+                                placeholder="First Name ">
                             <label for="name" class="contact-label">First Name</label>
                         </div>
 
                         <div class="contact-box">
-                            <input type="email" name="user_email" class="contact-input" id="email" required placeholder="Email Address ">
+                            <input type="email" name="user_email" class="contact-input" id="email" required
+                                placeholder="Email Address ">
                             <label for="email" class="contact-label">Email Address</label>
                         </div>
 
                     </div>
 
                     <div class="contact-box">
-                        <input type="text" name="user_subject" class="contact-input" id="subject" required placeholder="Subject">
+                        <input type="text" name="user_subject" class="contact-input" id="subject" required
+                            placeholder="Subject">
                         <label for="subject" class="contact-label">Subject</label>
                     </div>
 
                     <div class="contact-box contact-area">
-                        <textarea name="user_message" id="message" class="contact-input" required placeholder="Message"></textarea>
+                        <textarea name="user_message" id="message" class="contact-input" required
+                            placeholder="Message"></textarea>
                         <label for="message" class="contact-label">Message</label>
-                    </div>                        
+                    </div>
 
                     <p class="contact_message" id="contact-message"></p>
 
-                    <button type="submit" class="contact-button button font-medium text-xl bg-blue-700 hover:bg-blue-800 transition-all duration-300 ease-in-out px-6 py-3">
+                    <button type="submit"
+                        class="contact-button button font-medium text-xl bg-blue-700 hover:bg-blue-800 transition-all duration-300 ease-in-out px-6 py-3">
                         <i class="ri-send-plane-line mr-2"></i>Send Message
                     </button>
                 </form>
@@ -447,7 +528,7 @@
 
             <div class="contact-social">
                 <img src="src/img/curved-arrow.svg" alt="" class="contact-social-arrow">
-                
+
                 <div class="contact-social-data">
                     <div>
                         <p class="contact-social-description-1">
@@ -459,13 +540,16 @@
                         </p>
                     </div>
                     <div class="contact-social-links">
-                        <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                        <a href="" target="_blank"
+                            class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
                             <i class="ri-facebook-circle-line"></i>
                         </a>
-                        <a href="" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                        <a href="" target="_blank"
+                            class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
                             <i class="ri-instagram-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/abdul-mahi/" target="_blank" class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
+                        <a href="https://www.linkedin.com/in/abdul-mahi/" target="_blank"
+                            class="contact-social-link transition-all duration-300 ease-in-out px-1.5">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
 
@@ -476,13 +560,14 @@
         </div>
     </section>
 
-    <div class="pt-20"></div> 
+    <div class="pt-20"></div>
 
     <!-- Footer -->
     <footer class="footer pt-10 pb-8">
         <div style="font-family:'Rasa'" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="md:flex justify-between items-start mb-10">
-                <span style="font-family:'Kadwa'; color: #fcfcfdea" class="text-[26px] font-bold text-2xl">AHMahi<span class="text-blue-700">.</span></span>
+                <span style="font-family:'Kadwa'; color: #fcfcfdea" class="text-[26px] font-bold text-2xl">AHMahi<span
+                        class="text-blue-700">.</span></span>
                 <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
                     <div style="color: #fcfcfdea" class="info">
                         <h6 class="text-2xl font-semibold mb-6">Information</h6>
@@ -498,7 +583,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div style="color: #fcfcfdea" class="social">
                         <h6 class="text-2xl font-semibold mb-6">Social Media</h6>
                         <ul class="text-gray-400 font-light space-y-1">
@@ -513,7 +598,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>                      
+                </div>
             </div>
             <div class="border-style"></div>
             <div class="flex mt-5 justify-between items-start text-gray-400">
@@ -523,17 +608,23 @@
         </div>
     </footer>
 
-        
-    
+
+
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Typed JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="main.js"></script>
     <script>
@@ -549,6 +640,29 @@
                     $("#mobile-menu").addClass('hidden');
                 }
             });
+
+            // Close with the X
+            $("#mobile-menu-close").on("click", function () {
+                $("#mobile-menu").stop(true, true).slideUp(200);
+                $("#mobile-menu-btn").attr("aria-expanded", "false");
+            });
+
+            // Optional: close on ESC
+            $(document).on("keydown", function (e) {
+                if (e.key === "Escape" && $("#mobile-menu").is(":visible")) {
+                    $("#mobile-menu").stop(true, true).slideUp(200);
+                    $("#mobile-menu-btn").attr("aria-expanded", "false");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            // Close overlay when a link inside it is clicked
+            $("#mobile-menu").on("click", "a", function () {
+                $("#mobile-menu").stop(true, true).slideUp(200);
+                $("#mobile-menu-btn").attr("aria-expanded", "false").focus();
+            });
         });
     </script>
     <script>
@@ -562,19 +676,19 @@
     <script>
         window.addEventListener('scroll', reveal);
 
-        function reveal(){
+        function reveal() {
             var reveals = document.querySelectorAll('.reveal');
 
-            for(var i = 0; i < reveals.length; i++){
+            for (var i = 0; i < reveals.length; i++) {
 
                 var windowheight = window.innerHeight;
                 var revealtop = reveals[i].getBoundingClientRect().top;
                 var revealpoint = 150;
 
-                if(revealtop < windowheight - revealpoint){
+                if (revealtop < windowheight - revealpoint) {
                     reveals[i].classList.add('active');
                 }
-                else{
+                else {
                     reveals[i].classList.remove('active');
                 }
             }
@@ -617,162 +731,209 @@
     </script>
 
     <script>
-                (function ($) {
-        $(function () {
+        (function ($) {
+            $(function () {
 
-            $(window).on('scroll', function () {
-            fnOnScroll();
+                $(window).on('scroll', function () {
+                    fnOnScroll();
+                });
+
+                $(window).on('resize', function () {
+                    fnOnResize();
+                });
+
+                var agTimeline = $('.js-timeline'),
+                    agTimelineLine = $('.js-timeline_line'),
+                    agTimelineLineProgress = $('.js-timeline_line-progress'),
+                    agTimelinePoint = $('.js-timeline-card_point-box'),
+                    agTimelineItem = $('.js-timeline_item'),
+                    agOuterHeight = $(window).outerHeight(),
+                    agHeight = $(window).height(),
+                    f = -1,
+                    agFlag = false;
+
+                function fnOnScroll() {
+                    agPosY = $(window).scrollTop();
+
+                    fnUpdateFrame();
+                }
+
+                function fnOnResize() {
+                    agPosY = $(window).scrollTop();
+                    agHeight = $(window).height();
+
+                    fnUpdateFrame();
+                }
+
+                function fnUpdateWindow() {
+                    agFlag = false;
+
+                    agTimelineLine.css({
+                        top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+                        bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+                    });
+
+                    f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+                }
+
+                function fnUpdateProgress() {
+                    var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+                    i = agTop + agPosY - $(window).scrollTop();
+                    a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+                    n = agPosY - a + agOuterHeight / 2;
+                    i <= agPosY + agOuterHeight / 2 && (n = i - a);
+                    agTimelineLineProgress.css({ height: n + "px" });
+
+                    agTimelineItem.each(function () {
+                        var agTop = $(this).find(agTimelinePoint).offset().top;
+
+                        (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+                    })
+                }
+
+                function fnUpdateFrame() {
+                    agFlag || requestAnimationFrame(fnUpdateWindow);
+                    agFlag = true;
+                }
+
             });
-
-            $(window).on('resize', function () {
-            fnOnResize();
-            });
-
-            var agTimeline = $('.js-timeline'),
-            agTimelineLine = $('.js-timeline_line'),
-            agTimelineLineProgress = $('.js-timeline_line-progress'),
-            agTimelinePoint = $('.js-timeline-card_point-box'),
-            agTimelineItem = $('.js-timeline_item'),
-            agOuterHeight = $(window).outerHeight(),
-            agHeight = $(window).height(),
-            f = -1,
-            agFlag = false;
-
-            function fnOnScroll() {
-            agPosY = $(window).scrollTop();
-
-            fnUpdateFrame();
-            }
-
-            function fnOnResize() {
-            agPosY = $(window).scrollTop();
-            agHeight = $(window).height();
-
-            fnUpdateFrame();
-            }
-
-            function fnUpdateWindow() {
-            agFlag = false;
-
-            agTimelineLine.css({
-                top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
-                bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
-            });
-
-            f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
-            }
-
-            function fnUpdateProgress() {
-            var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
-
-            i = agTop + agPosY - $(window).scrollTop();
-            a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
-            n = agPosY - a + agOuterHeight / 2;
-            i <= agPosY + agOuterHeight / 2 && (n = i - a);
-            agTimelineLineProgress.css({height: n + "px"});
-
-            agTimelineItem.each(function () {
-                var agTop = $(this).find(agTimelinePoint).offset().top;
-
-                (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
-            })
-            }
-
-            function fnUpdateFrame() {
-            agFlag || requestAnimationFrame(fnUpdateWindow);
-            agFlag = true;
-            }
-
-        });
         })(jQuery);
     </script>
 
     <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                window.addEventListener('scroll', scrollHandler);
-});
+        document.querySelectorAll('[role="tablist"]').forEach(tablist => {
+            const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+            const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
 
-function scrollHandler() {
-    var elements = document.querySelectorAll('.contact-data, .contact-mail');
+            // Set initial active state
+            tabs.forEach((t, i) => {
+                const isActive = t.classList.contains('is-active');
+                panels[i].hidden = !isActive;
+                t.setAttribute('aria-selected', String(isActive));
+            });
 
-    elements.forEach(function(element) {
-        var position = element.getBoundingClientRect();
+            function setActive(index) {
+                tabs.forEach((t, i) => {
+                    t.classList.remove('is-active');
+                    t.setAttribute('aria-selected', 'false');
+                    panels[i].style.display = 'none'; // Hide all panels
+                });
 
-        // Threshold for starting the animation (how far into the viewport).
-        var startAnimationThreshold = 150;
+                // Activate the selected tab
+                tabs[index].classList.add('is-active');
+                tabs[index].setAttribute('aria-selected', 'true');
 
-        // Check if enough of the element is visible to start the animation
-        if (position.top + startAnimationThreshold < window.innerHeight && position.bottom > startAnimationThreshold) {
-            element.classList.add('visible');
+                // Show the selected panel
+                panels[index].style.display = 'grid'; // Adjust the display style as needed
+                tabs[index].focus();
+            }
+
+            tabs.forEach((tab, i) => {
+                tab.addEventListener('click', () =>
+                    setActive(i)
+                );
+                tab.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        setActive((i + 1) % tabs.length);
+                    }
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        setActive((i - 1 + tabs.length) % tabs.length);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('scroll', scrollHandler);
+        });
+
+        function scrollHandler() {
+            var elements = document.querySelectorAll('.contact-data, .contact-mail');
+
+            elements.forEach(function (element) {
+                var position = element.getBoundingClientRect();
+
+                // Threshold for starting the animation (how far into the viewport).
+                var startAnimationThreshold = 150;
+
+                // Check if enough of the element is visible to start the animation
+                if (position.top + startAnimationThreshold < window.innerHeight && position.bottom > startAnimationThreshold) {
+                    element.classList.add('visible');
+                }
+
+                // Check if the element is not sufficiently in view to remain visible
+                if (position.bottom < startAnimationThreshold || position.top > window.innerHeight - startAnimationThreshold) {
+                    element.classList.remove('visible');
+                }
+            });
         }
 
-        // Check if the element is not sufficiently in view to remain visible
-        if (position.bottom < startAnimationThreshold || position.top > window.innerHeight - startAnimationThreshold) {
-            element.classList.remove('visible');
-        }
-    });
-}
+        document.addEventListener('DOMContentLoaded', () => {
+            const interBubble = document.querySelector('.interactive');
+            let curX = 0;
+            let curY = 0;
+            let tgX = 0;
+            let tgY = 0;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const interBubble = document.querySelector('.interactive');
-    let curX = 0;
-    let curY = 0;
-    let tgX = 0;
-    let tgY = 0;
+            function move() {
+                curX += (tgX - curX) / 20;
+                curY += (tgY - curY) / 20;
+                interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+                requestAnimationFrame(() => {
+                    move();
+                });
+            }
 
-    function move() {
-        curX += (tgX - curX) / 20;
-        curY += (tgY - curY) / 20;
-        interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
-        requestAnimationFrame(() => {
+            window.addEventListener('mousemove', (event) => {
+                tgX = event.clientX;
+                tgY = event.clientY;
+            });
+
             move();
         });
-    }
 
-    window.addEventListener('mousemove', (event) => {
-        tgX = event.clientX;
-        tgY = event.clientY;
-    });
+    </script>
 
-    move();
-});
+    <script>
+        function rotateCube(e) {
+            var cube = document.getElementsByClassName("cube");
+            //The function captures the mouse's current position (e.clientX for horizontal, and e.clientY for vertical coordinates).
+            //It then calculates the mouse's position relative to the center of the window by subtracting half of the window's width
+            //These values (x and y) are then adjusted to control the intensity of the rotation
+            var x = e.clientX - window.innerWidth / 2;
+            var y = e.clientY - window.innerHeight / 2;
+            //
+            var q = 0.10;
+            var i;
+            //The adjustment is made by multiplying them by a factor (q) which represents the sensitivity of the rotation to mouse movement
+            x = x * q * 1.05;
+            y = -y * q * 1.05;
 
-</script>
-
-<script>
-    function rotateCube(e) {
-        var cube = document.getElementsByClassName("cube");
-        //The function captures the mouse's current position (e.clientX for horizontal, and e.clientY for vertical coordinates).
-        //It then calculates the mouse's position relative to the center of the window by subtracting half of the window's width
-        //These values (x and y) are then adjusted to control the intensity of the rotation
-        var x = e.clientX - window.innerWidth / 2;
-        var y = e.clientY - window.innerHeight / 2;
-        //
-        var q = 0.10;
-        var i;
-        //The adjustment is made by multiplying them by a factor (q) which represents the sensitivity of the rotation to mouse movement
-        x = x * q * 1.05;
-        y = -y * q * 1.05;
-
-        for(i = 0; i < cube.length; i++){
-            cube[i].style.transform = "rotateY(" + x +"deg) rotateX("+ y +"deg)";
+            for (i = 0; i < cube.length; i++) {
+                cube[i].style.transform = "rotateY(" + x + "deg) rotateX(" + y + "deg)";
+            }
         }
-    }
 
-    //floaties logic 
-    document.addEventListener("mousemove", parallax);
-    
+        //floaties logic 
+        document.addEventListener("mousemove", parallax);
+
         function parallax(e) {
             document.querySelectorAll('.layer').forEach(layer => {
                 const speed = parseFloat(layer.getAttribute('data-speed')); // Parse float to ensure numerical calculation
-                
+
                 const x = (window.innerWidth - e.pageX) * speed / 100; // Adjust the calculation
                 const y = (window.innerHeight - e.pageY) * speed / 100; // Adjust the calculation
-    
+
                 layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
             });
         }
-</script>
+    </script>
 
 </body>
+
 </html>

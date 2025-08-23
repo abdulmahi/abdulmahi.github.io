@@ -7,16 +7,16 @@ function section1() {
         stagger: 0.1,
         delay: 0.7, // Delay starting this animation by 0.5 seconds
     })
-    .from(".hero-intro, .hero-title, .hero-desc, .hero-buttons", {
-        opacity: 0,
-        x: -150,
-        stagger: 0.1,
-    })
-    .from(".home-scroll-mouse, .home-scroll-text, .home-scroll-box", {
-        opacity: 0,
-        y: -30,
-        stagger: 0.1,
-    });
+        .from(".hero-intro, .hero-title, .hero-desc, .hero-buttons", {
+            opacity: 0,
+            x: -150,
+            stagger: 0.1,
+        })
+        .from(".home-scroll-mouse, .home-scroll-text, .home-scroll-box", {
+            opacity: 0,
+            y: -30,
+            stagger: 0.1,
+        });
 }
 
 function section2() {
@@ -44,10 +44,10 @@ barba.init({
     transitions: [
         {
             name: "pageTransitions",
-            once({current, next, trigger}){
+            once({ current, next, trigger }) {
                 let tl = gsap.timeline();
                 tl.to(".cover span", {
-                    y : "-100%",
+                    y: "-100%",
                     stagger: 0.2
                 });
                 tl.to(".cover", {
@@ -57,10 +57,10 @@ barba.init({
 
                 return tl;
             },
-            leave({current, next, trigger}){
+            leave({ current, next, trigger }) {
                 let tl = gsap.timeline();
                 tl.to(".cover span", {
-                    y : "0%",
+                    y: "0%",
                     stagger: 0.2
                 });
                 tl.to(".cover", {
@@ -69,10 +69,10 @@ barba.init({
                 });
                 return tl;
             },
-            enter({current, next, trigger}){
+            enter({ current, next, trigger }) {
                 let tl = gsap.timeline();
                 tl.to(".cover span", {
-                    y : "-100%",
+                    y: "-100%",
                     stagger: 0.2
                 });
                 tl.to(".cover", {
@@ -81,7 +81,7 @@ barba.init({
                 });
                 return tl;
             },
-            beforeEnter({current, next, trigger}){
+            beforeEnter({ current, next, trigger }) {
                 gsap.set(current.container, {
                     display: "block"
                 });
