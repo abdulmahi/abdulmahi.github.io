@@ -184,20 +184,369 @@
                 Projects<span class="text-blue-700 text-6xl">.</span></span>
             </h2>
             <div class="flex gap-4 mt-8 tabs flex-wrap" role="tablist">
-                <button role="tab" id="t-data" aria-controls="p-data" class="filter is-active">Data</button>
-                <button role="tab" id="t-design" aria-controls="p-design" class="filter">Design</button>
-                <button role="tab" id="t-development" aria-controls="p-development" class="filter">Development</button>
+                <button role="tab" id="t-data" aria-controls="p-data" class="filter is-active font-medium">Data & Analytics</button>
+                <button role="tab" id="t-design" aria-controls="p-design" class="filter">UI Design</button>
+                <button role="tab" id="t-development" aria-controls="p-development" class="filter">Software Development</button>
             </div>
 
             <div style="font-family:'Rasa'" class="projects-container grid" id="p-data" role="tabpanel"
                 aria-labelledby="t-data">
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\minnesota_traffic.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
 
-            </div>
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Analytics and Prediction</h3>
+                        <h2 class="projects-title text-4xl font-bold">Minnesota Interstate Traffic Analysis</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            a Tableau-dashboard leveraging time hierarchies, weather, and holidays; 
+                            paired with Random Forest regression to predict hourly interstate traffic and 
+                            enable data-driven forecasting for Minnesota’s transportation planning.
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi/Minnesota-Interstate-Traffic-Analysis" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://public.tableau.com/views/HighwaytrafficconditionsforinfrastructureDevelopment/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> Interact
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\EDHospital2.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Big Data Analytics</h3>
+                        <h2 class="projects-title text-4xl font-bold">Hospital ED - Multimodal Clinical Monitoring</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Emergency Department analytics project using the MIMIC-IV-ED (MC-MED) dataset from PhysioNet. 
+                            Built in Power BI to explore patient flow, triage acuity, and outcomes using de-identified patient data.
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi/MIMIC-IV-Hospital-ED-Analytics" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://physionet.org/content/mc-med/1.0.0/"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> Dataset
+                        </a>
+                    </div>
+                </article>
+                <!----
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article> -->
+
+            </div> 
 
             <div style="font-family:'Rasa'" class="projects-container grid" id="p-design" role="tabpanel"
                 aria-labelledby="t-design">
 
-            </div>
+                <!--
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <div class="project-image">
+                        <img src="src\img\MENTORd.png" alt="image" class="projects-img">
+                        <a href="#" class="projects-button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-subtitle text-xl text-gray-500">Mobile App</h3>
+                        <h2 class="projects-title text-4xl font-bold">MENTORd</h2>
+                        <p class="projects-description text-xl text-gray-500">
+                            Type-II Diabetes Self Management Solution (Patient App Upgrade).
+                            Built with Flutter, Node.JS and MySQL
+                        </p>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a href="https://github.com/AHMahi" target="_blank" class="projects-link text-xl">
+                            <i class="ri-github-line mb-1"></i></i> View
+                        </a>
+
+                        <a href="https://dribbble.com/shots/23739130-HealthTrack-A-A-Minimalist-Health-Monitoring-App?utm_source=Clipboard_Shot&utm_campaign=AHMahi&utm_content=HealthTrack%20-%20A%20A%20Minimalist%20Health%20Monitoring%20App&utm_medium=Social_Share"
+                            target="_blank" class="projects-link text-xl">
+                            <i class="ri-dribbble-line mb-1"></i> View
+                        </a>
+                    </div>
+                </article>
+                -->
+            </div> 
 
             <div style="font-family:'Rasa'" class="projects-container grid" id="p-development" role="tabpanel"
                 aria-labelledby="t-development">
