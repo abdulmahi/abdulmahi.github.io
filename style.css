@@ -1605,3 +1605,7 @@ section {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
