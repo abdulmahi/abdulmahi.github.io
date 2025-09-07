@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M332PSL2');</script>
+    <!-- End Google Tag Manager -->
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!-- icon -->
@@ -40,6 +50,10 @@
 </head>
 
 <body data-barba="wrapper" class="" style="background-color: #f3f3f3; font-family: 'Noto Sans', sans-serif;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M332PSL2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div data-barba="container" data-barba-namespace="check">
         <div class="cover">
             <span></span><span></span><span></span><span></span><span></span>
@@ -105,11 +119,12 @@
         <!-- Hero -->
         <section class="hero text-gray-800 py-10 lg:py-10 -mt-24">
             <div class="container mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
-                <h1 style="font-family:'Kadwa'" class="hero-intro text-8xl font-black lg:leading-[94px] lg:text-[38px]">
+                <!-- TODO: Scale floaties in mobile -->
+                <h1 style="font-family:'Kadwa'" class="hero-intro font-black lg:leading-[94px]">
                     Abdul Mahi
                 </h1>
                 <h1 style="font-family:'kadwa'"
-                    class="hero-title italic text-3xl mt-2 font-black lg:text-[88px] lg:leading-[94px]">
+                    class="hero-title italic text-2xl lg:text-3xl mt-2 font-black lg:leading-[94px]">
                     <span id="typed"></span>
                 </h1>
                 <!-- <p class="hero-desc w-full lg:w-3/6 mt-3 mx-2 text-gray-800 font-semibold">
@@ -121,13 +136,13 @@
                             <a href="#contact" class="cta-btn shadow-lg">
                                 <span>About Me</span>
                             </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 24" fill="none" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="cta-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 24" fill="none" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cta-arrow">
                                 <line x1="0" y1="12" x2="28" y2="12" />
                                 <polyline points="22,6 28,12 22,18" />
                             </svg>
                         </div>
-                
+
                         <a href="/resume.pdf" class="cta-secondary" download>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5">
@@ -180,90 +195,80 @@
         </section>
     </div>
 
-   <!-- Popover Overlay -->
-    <div
-    id="about-popover"
-    class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-50 items-center justify-center"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="about-title"
-    >
-    <div class="relative w-full h-full md:h-auto md:w-[90vw] md:max-w-7xl shadow-2xl overflow-hidden md:rounded-2xl">
-        <!-- Container grid -->
-        <div class="relative flex h-full flex-col md:grid md:grid-cols-2 md:p-10">
-        
-        <!-- Left Side -->
-        <div class="relative flex flex-col flex-1 p-10 bg-gray-50 overflow-x-hidden">
-            <h1
-            class="absolute top-5 right-5 text-7xl md:text-9xl font-bold text-gray-200 select-none pointer-events-none"
-            aria-hidden="true"
-            >
-            DATA
-            </h1>
+    <!-- Popover Overlay -->
+    <div id="about-popover" class="fixed inset-0 bg-black/70 bg-opacity-80 md:bg-opacity-60 hidden z-50
+            items-center justify-center overlay-blur-md" role="dialog" aria-modal="true" aria-labelledby="about-title">
 
-            <div class="relative z-10 lg:px-8 lg:py-16">
-            <h2 id="about-title" class="text-3xl font-bold mb-8">About Me.</h2>
-            <p class="text-gray-700 mb-4">
-                I'm <span class="text-red-500 font-semibold">Abdul Mahi</span>, a
-                <span class="text-blue-600 font-semibold">Data Solutions Expert</span>.
-                I love exploring how visuals can reveal hidden patterns. I specialize in building
-                custom BI visuals that blend creativity, design, and psychology so people grasp insights at a glance.
-            </p>
-            <p class="text-gray-700 mb-6">
-                Outside of data, you’ll usually find me with a guitar in hand or deep in a debate about big ideas.
-                The same <span class="font-semibold">creativity</span> and <span class="font-semibold">curiosity</span>
-                that fuel my hobbies also shape how I approach solving data problems.
-            </p>
+        <div class="relative popover-shell shadow-2xl overflow-y-auto md:grid-cols-2 md:grid">
 
-            <!-- Tech icons -->
-            <div class="flex space-x-4 mt-6" aria-label="Tech stack">
-                <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
-                alt="Microsoft SQL Server" class="w-10 h-10"
-                />
-                <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                alt="Python" class="w-10 h-10"
-                />
-                <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-                alt="Pandas" class="w-10 h-10"
-                />
+            <!-- Left Side -->
+            <div class="relative flex flex-col flex-1 p-10 bg-gray-50 overflow-x-hidden panel-split about-left">
+                <h1 class="absolute top-5 right-5 text-7xl md:text-9xl font-bold text-gray-200 select-none pointer-events-none"
+                    aria-hidden="true">
+                    DATA
+                </h1>
+
+                <div class="relative z-10 lg:px-8 lg:py-16">
+                    <h2 id="about-title" class="text-3xl font-bold mb-8">About Me.</h2>
+                    <p class="text-gray-700 mb-4">
+                        I'm <span class="text-red-500 font-semibold">Abdul Mahi</span>, a
+                        <span class="text-blue-600 font-semibold">Data Solutions Expert</span>.
+                        I love exploring how visuals can reveal hidden patterns. I specialize in building
+                        custom BI visuals that blend creativity, design, and psychology so people grasp insights at
+                        a glance.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Outside of data, you’ll usually find me with a guitar in hand or deep in a debate about big
+                        ideas.
+                        The same <span class="font-semibold">creativity</span> and <span
+                            class="font-semibold">curiosity</span>
+                        that fuel my hobbies also shape how I approach solving data problems.
+                    </p>
+
+                    <!-- Tech icons -->
+                    <div class="flex space-x-4 mt-6" aria-label="Tech stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                            alt="Microsoft SQL Server" class="w-10 h-10" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python" class="w-10 h-10" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                            alt="Pandas" class="w-10 h-10" />
+                    </div>
+                </div>
             </div>
+
+            <!-- Right Side -->
+            <div class="relative bg-gray-900 text-white flex-1 p-10 flex flex-col panel-split about-right">
+
             </div>
-        </div>
 
-        <!-- Right Side -->
-        <div class="relative bg-gray-900 text-white flex-1 p-10 flex flex-col">
+            <button id="close-popover"
+                class="absolute md:top-8 md:right-8 top-5 right-5 text-gray-500 hover:text-red-400" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+                </svg>
+            </button>
         </div>
-
-        <button
-            id="close-popover"
-            class="absolute md:top-16 md:right-16 top-5 right-5 text-gray-200 hover:text-red-400"
-            aria-label="Close"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/>
-            </svg>
-        </button>
-        </div>
-    </div>
     </div>
 
     <!-- Projects -->
     <section class="projects section py-20 justify-start" id="projects">
         <div class="container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
             <h2 style="font-family:'Kadwa'"
-                class="section-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                class="section-heading text-gray-800 font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                 Projects<span class="text-blue-700 text-6xl">.</span></span>
             </h2>
             <div class="flex gap-4 mt-8 tabs flex-wrap" role="tablist">
-                <button role="tab" id="t-data" aria-controls="p-data" class="filter is-active font-medium"><span>Data & Analytics</span></button>
-                <button role="tab" id="t-design" aria-controls="p-design" class="filter"><span>UI Design</span></button>
-                <button role="tab" id="t-development" aria-controls="p-development" class="filter"><span>Software Development</span></button>
+                <button role="tab" id="t-data" aria-controls="p-data" class="filter is-active font-medium"><span>Data &
+                        Analytics</span></button>
+                <button role="tab" id="t-design" aria-controls="p-design" class="filter"><span>UI
+                        Design</span></button>
+                <button role="tab" id="t-development" aria-controls="p-development" class="filter"><span>Software
+                        Development</span></button>
             </div>
 
-            <div style="font-family:'Rasa'" class="projects-container grid" id="p-data" role="tabpanel"
+            <div style="font-family:'Rasa'" class="projects-container grid reveal" id="p-data" role="tabpanel"
                 aria-labelledby="t-data">
                 <article class="projects-card">
                     <div class="project-image">
@@ -306,11 +311,13 @@
 
                     <div class="projects-content">
                         <h3 class="projects-subtitle text-xl text-gray-500">Big Data Analytics</h3>
-                        <h2 class="projects-title text-4xl font-bold">Hospital ED - Multimodal Clinical Monitoring</h2>
+                        <h2 class="projects-title text-4xl font-bold">Hospital ED - Multimodal Clinical Monitoring
+                        </h2>
                         <p class="projects-description text-xl text-gray-500">
                             Emergency Department analytics project using the MIMIC-IV-ED (MC-MED) dataset from
                             PhysioNet.
-                            Built in Power BI to explore patient flow, triage acuity, and outcomes using de-identified
+                            Built in Power BI to explore patient flow, triage acuity, and outcomes using
+                            de-identified
                             patient data.
                         </p>
                     </div>
@@ -446,7 +453,7 @@
 
             </div>
 
-            <div style="font-family:'Rasa'" class="projects-container grid" id="p-design" role="tabpanel"
+            <div style="font-family:'Rasa'" class="projects-container grid reveal" id="p-design" role="tabpanel"
                 aria-labelledby="t-design">
 
                 <!--
@@ -626,7 +633,7 @@
                 -->
             </div>
 
-            <div style="font-family:'Rasa'" class="projects-container grid" id="p-development" role="tabpanel"
+            <div style="font-family:'Rasa'" class="projects-container grid reveal" id="p-development" role="tabpanel"
                 aria-labelledby="t-development">
                 <article class="projects-card">
                     <div class="project-image">
@@ -727,7 +734,8 @@
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">BloodSync</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            A blood donating and requesting platform specifically designed for university students in
+                            A blood donating and requesting platform specifically designed for university students
+                            in
                             Bangladesh.
                             Built with Vite, TypeScript, NextJS, Tailwind and Designed with Adobe XD.
                         </p>
@@ -787,7 +795,8 @@
                         <h3 class="projects-subtitle text-xl text-gray-500">Website</h3>
                         <h2 class="projects-title text-4xl font-bold">Mirai Tablets</h2>
                         <p class="projects-description text-xl text-gray-500">
-                            An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data storage
+                            An E-commerce website built with Vanilla CSS, JS and PHP, MySQL for Backend and data
+                            storage
                             & Management.
                         </p>
                     </div>
@@ -812,15 +821,17 @@
     <!-- Service -->
     <section class="services -mt-10" id="services">
         <div class="container service-container max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8">
+            <!-- TODO: mobile 44px section heading - specialities -->
             <h2 style="font-family:'Kadwa'"
-                class="service-heading text-gray-800 text-6xl lg:text-6xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+                class="service-heading text-gray-800 font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
                 Specialities<span class="text-blue-700 text-6xl">.</span></span>
             </h2>
             <div class="service-text-container flex mt-6 md:mt-0 w-full md:w-[360px] items-center">
                 <!-- Vertical hr with adjusted width and boldness -->
                 <hr class="service-hr w-2 h-6 border-l-8 border-blue-700 mr-4 md:mr-2">
                 <!-- Concise two-line description -->
-                <p class="service-desc text-gray-700 font-medium">I bring a complementary mix of Data expertise with solid Design and Development skill</p>
+                <p class="service-desc text-gray-700 font-medium">I bring a complementary mix of Data expertise with
+                    solid Design and Development skill</p>
             </div>
             <div class="reveal service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
 
@@ -861,7 +872,8 @@
                     <!-- Paragraph -->
                     <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Turning complex data into clear, actionable
                         insights that drive meaningful business decisions. Specializing in identifying trends,
-                        uncovering root causes, and delivering strategic recommendations through compelling narrative
+                        uncovering root causes, and delivering strategic recommendations through compelling
+                        narrative
                         and dashboard storytelling.</p>
                 </div>
                 <!-- Card 3: UI/UX Design -->
@@ -880,7 +892,8 @@
                     <h2 style="font-family:'Rasa'" class="text-3xl font-bold mt-11">UI/UX Design</h2>
                     <!-- Paragraph -->
                     <p class="text-gray-700 text-sm mb-4 leading-5 mt-5">Crafting seamless user experiences through
-                        intuitive design, user research, and usability testing. Focused on creating visually appealing
+                        intuitive design, user research, and usability testing. Focused on creating visually
+                        appealing
                         interfaces that enhance user satisfaction and engagement.</p>
                 </div>
             </div>
@@ -904,7 +917,8 @@
                 </p>
 
                 <p class="contact-description text-sm text-gray-600">
-                    Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email Address</b>,
+                    Just send me your <b class="text-gray-800">Name</b> and <b class="text-gray-800">Email
+                        Address</b>,
                     but you won't receive anything other than your reply.
                 </p>
 
@@ -1361,33 +1375,47 @@
     </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const aboutPopover = document.getElementById("about-popover");
-        const actionBtn = document.querySelector(".cta-btn");
-        const closeBtn = document.getElementById("close-popover");
+        $(function () {
+            const $overlay = $('#about-popover');
+            const $openBtn = $('.cta-btn');
+            const $closeBtn = $('#close-popover');
 
-        actionBtn.addEventListener("click", (e) => {
-          e.preventDefault();
-          aboutPopover.classList.remove("hidden");
-          aboutPopover.classList.add("flex");
-          document.body.classList.add("no-scroll");
-        });
+            function openOverlay(e) {
+                if (e) e.preventDefault();
 
-        closeBtn.addEventListener("click", () => {
-          aboutPopover.classList.remove("flex");
-          aboutPopover.classList.add("hidden");
-          document.body.classList.remove("no-scroll");
-        });
+                // Show overlay and set initial state
+                $overlay.removeClass('hidden').addClass('flex is-primed');
+                $('body').addClass('no-scroll');
 
-        // Close on overlay click
-        aboutPopover.addEventListener("click", (e) => {
-          if (e.target === aboutPopover) {
-            aboutPopover.classList.remove("flex");
-            aboutPopover.classList.add("hidden");
-            document.body.classList.remove("no-scroll");
-          }
+                // Force a reflow
+                $overlay[0].offsetHeight;
+                $overlay.removeClass('is-primed').addClass('is-opening');
+            }
+
+            function closeOverlay() {
+                $overlay.removeClass('is-opening is-primed').addClass('is-closing');
+                $overlay.one('transitionend webkitTransitionEnd oTransitionEnd', function (ev) {
+                    if (ev.target !== this) return;
+
+                    $overlay.addClass('hidden').removeClass('flex is-closing');
+                    $('body').removeClass('no-scroll');
+                })
+            }
+
+            // Open
+            $openBtn.on('click', openOverlay);
+
+            // Close
+            $closeBtn.on('click', closeOverlay);
+
+            $overlay.on('click', function (e) {
+                if (e.target === this) closeOverlay();
+            });
+
+            $(document).on('keydown', function (e) {
+                if (e.key === 'Escape' && $overlay.is(':visible')) closeOverlay();
+            });
         });
-      });
     </script>
 
 </body>
