@@ -48,6 +48,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 </head>
+
 <body data-barba="wrapper" class="" style="background-color: #f3f3f3; font-family: 'Noto Sans', sans-serif;">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M332PSL2" height="0" width="0"
@@ -1167,6 +1168,21 @@
 
         contactForm.addEventListener('submit', sendEmail);
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.barba && barba.hooks) {
+            barba.hooks.after(() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                event: 'virtual_page_view',
+                page_location: location.href,
+                page_title: document.title
+                });
+            });
+            }
+        });
     </script>
 
     <script>
